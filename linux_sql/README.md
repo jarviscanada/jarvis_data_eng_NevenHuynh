@@ -94,6 +94,7 @@ bash -x ./scripts/psql_docker.sh
   - lscpu
   - vmstat
   - /proc/cpuinfo
+    
 - ddl.sql script was tested by checking if the tables were created in the database and inserting sample data
 
 ## Deployment

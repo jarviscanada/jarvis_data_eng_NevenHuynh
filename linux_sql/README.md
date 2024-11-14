@@ -58,7 +58,7 @@ bash scripts/host_usage.sh localhost 5432 host_agent postgres password
 # edit crontab jobs
 crontab -e
 
-# add this to crontab
+# Add this to crontab. Five asterisks means it runs every minute.
 * * * * * bash [/path_to_host_usage/host_usage.sh] localhost 5432 host_agent postgres password > /tmp/host_usage.log
 
 # list crontab jobs
@@ -105,7 +105,7 @@ The application was deployed using crontab and ensuring that the host_usage.sh s
 ```
 chmod +x
 ```
-Crontab allows the script to be executed automatically at a set schedule which can be specified. 
+Crontab allows the script to be executed automatically at a specified schedule. 
 
 ## Improvements
 - Data Visualization for real-time monitoring metrics stored in the database

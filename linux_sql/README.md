@@ -108,3 +108,6 @@ chmod +x
 Crontab allows the script to be executed automatically at a set schedule which can be specified. 
 
 ## Improvements
+- Data Visualization for real-time monitoring metrics stored in the database
+- Alert System to notify users when resource usage exceeds a set threshold
+- Adding more advanced metrics such as network latency

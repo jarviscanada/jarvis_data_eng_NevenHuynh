@@ -17,7 +17,7 @@ fi
 vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
 
-# Retrieve hardware specification variables
+# Retrieve usage info variables
 # xargs trims leading and trailing white spaces
 memory_free=$(echo "$vmstat_mb" | tail -1 | awk '{print $4}')
 cpu_idle=$(echo "$vmstat_mb" | tail -1| awk '{print $15}')

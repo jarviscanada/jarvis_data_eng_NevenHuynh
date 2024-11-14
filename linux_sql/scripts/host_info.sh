@@ -17,7 +17,7 @@ fi
 lscpu_out=`lscpu`
 hostname=$(hostname -f)
 
-# Retrieve CPU information variables
+# Retrieve hardware specification variables
 # xargs trims leading and trailing white spaces
 cpu_number=$(echo "$lscpu_out" | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 cpu_architecture=$(echo "$lscpu_out"  | egrep "^Architecture:" | awk '{print $2}' | xargs)

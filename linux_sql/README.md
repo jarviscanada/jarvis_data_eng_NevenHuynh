@@ -63,6 +63,9 @@ crontab -e
 
 # list crontab jobs
 crontab -l
+
+# Verify the script runs as intended by checking the logs
+cat /tmp/host_usage.log
 ```
 ### Database Modeling
 host_info table stores the hardware specifications of the system

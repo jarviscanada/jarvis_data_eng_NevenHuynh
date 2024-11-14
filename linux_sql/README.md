@@ -30,4 +30,7 @@ crontab -e
 ## Implementation 
 This project uses Docker, Bash scripts, PostgreSQL, and Git to build a reliable Linux cluster monitoring system. Docker is employed to containerize the PostgreSQL database, making it easy to deploy and manage. Bash scripts are used to collect system information from each host which is then stored on the PostgreSQL database. Crontab schedules periodic data collection to automate the data collection process. Git is used for version control, enabling collaborative development and easy tracking of changes. 
 ### Architecture
-![Architecture] (./assets/Architecture.png) 
+![Cluster Diagram](./assets/Architecture.png) 
+
+### Scripts 
+

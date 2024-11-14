@@ -87,7 +87,7 @@ host_usage table
 | cpu_idle | INT2 | 
 | cpu_kernel | INT2 | 
 | disk_io | INT4 | 
-| disk_available | INT 4 |
+| disk_available | INT4 |
 
 ## Test
 - bash scripts were tested using debug mode by using the -x option

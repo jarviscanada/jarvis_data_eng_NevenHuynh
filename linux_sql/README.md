@@ -66,28 +66,28 @@ crontab -l
 ```
 ### Database Modeling
 host_info table
-| Column | Datatype | 
+| Column | Description | 
 |--------|----------|
-| id | SERIAL |
-| hostname | VARCHAR |
-| cpu_number | INT2 |
-| cpu_architecture | VARCHAR |
-| cpu_model | VARCHAR | 
-| cpu_mhz | FLOAT8 | 
-| l2_cache | INT4 | 
-| "timestamp" | TIMESTAMP | 
-| total_mem | INT4 |
+| id | Unique identifier for each server |
+| hostname | The full name of the host machine |
+| cpu_number | Number of CPUs |
+| cpu_architecture | CPU Architecture |
+| cpu_model | CPU Model | 
+| cpu_mhz | CPU Clockspeed in MHz | 
+| l2_cache | L2 Cache size in KB | 
+| "timestamp" | Current Time | 
+| total_mem | Total memory in MB |
 
 host_usage table
-| Column | Datatype | 
+| Column | Description | 
 |--------|----------|
-| "timestamp" | TIMESTAMP|
-| host_id | SERIAL |
-| memory_free | INT4 | 
-| cpu_idle | INT2 | 
-| cpu_kernel | INT2 | 
-| disk_io | INT4 | 
-| disk_available | INT4 |
+| "timestamp" | Current time|
+| host_id | Unique identifier for each server |
+| memory_free | Memory available in MB | 
+| cpu_idle | Percentage of time CPU is idle | 
+| cpu_kernel | Percentage of time CPU spent in system (kernel) space | 
+| disk_io | Blocks written to disk | 
+| disk_available | Available disk space in MB |
 
 ## Test
 - bash scripts were tested using debug mode by using the -x option

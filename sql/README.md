@@ -1,6 +1,20 @@
 # Introduction
+This project contains a compilation of SQL exercises to improve one's skills in writing queries. The Topics include:
+- CRUD (create, read, update, delete)
+- Basic filtering using the 'WHERE' clause
+- Joining tables 
+- Aggregation using aggregate functions
+- String manipulation
+
+The exercises can be found [here](https://pgexercises.com/).
 
 # SQL Queries
+The tables can be set up using the included DDL script 'clubdata.sql' with the command
+```
+# Modify this query for your database (database name, connection, etc)
+psql -U <username> -f clubdata.sql -d postgres -x -q
+```
+The tables can also be set up using the following SQL script.
 
 ###### Table Setup (DDL)
 To create the members table:
@@ -45,7 +59,7 @@ create table cd.bookings(
 
 ```
 ### Modifying Data
-###### Question 1: Insert some data
+###### Question 1: Insert some data into a table
 The club is adding a new facility - a spa. We need to add it into the facilities table. Use the following values:
 facid: 9, Name: 'Spa', membercost: 20, guestcost: 30, initialoutlay: 100000, monthlymaintenance: 800.
 ```
@@ -57,7 +71,7 @@ VALUES
 
 ```
 
-###### Question 2: Insert with a subquery
+###### Question 2: Insert calculated data into a table
 Let's try adding the spa to the facilities table again. This time, though, we want to automatically generate the value for the next facid, rather than specifying it as a constant. Use the following values for everything else:
 Name: 'Spa', membercost: 20, guestcost: 30, initialoutlay: 100000, monthlymaintenance: 800.
 ```
@@ -68,7 +82,7 @@ VALUES
 ((SELECT max(facid) FROM cd.facilities)+1, 'Spa', 20, 30, 100000, 800);
 ```
 
-###### Question 3: Update row
+###### Question 3: Update some existing data
 We made a mistake when entering the data for the second tennis court. The initial outlay was 10000 rather than 8000: you need to alter the data to fix the error.
 ```
 UPDATE
@@ -79,7 +93,7 @@ WHERE
 	facid=1;
 ```
 
-###### Question 4: Update row with subqueries
+###### Question 4: Update a row based on the contents of another row
 We want to alter the price of the second tennis court so that it costs 10% more than the first one. Try to do this without using constant values for the prices, so that we can reuse the statement if we want to.
 ```
 UPDATE 
@@ -97,7 +111,7 @@ As part of a clearout of our database, we want to delete all bookings from the c
 DELETE FROM cd.bookings;
 ```
 
-###### Question 6: Delete row
+###### Question 6: Delete a member from the cd.members table
 We want to remove member 37, who has never made a booking, from our database. How can we achieve that?
 ```
 DELETE 
@@ -107,7 +121,7 @@ WHERE
 	memid = 37;
 ```
 ### Basics
-###### Question 1: Control which rows are retrieved
+###### Question 1: Control which rows are retrieved - part 2
 How can you produce a list of facilities that charge a fee to members, and that fee is less than 1/50th of the monthly maintenance cost? Return the facid, facility name, member cost, and monthly maintenance of the facilities in question.
 ```
 SELECT
@@ -133,7 +147,7 @@ WHERE
 	name LIKE '%Tennis%';
 ```
 
-###### Question 3: Match multiple possible values
+###### Question 3: Matching against multiple possible values
 How can you retrieve the details of facilities with ID 1 and 5? Try to do it without using the OR operator.
 ```
 SELECT
@@ -188,7 +202,7 @@ WHERE
 	AND surname = 'Farrell';
 ```
 
-###### Question 2: Start times of bookings for tennis courts
+###### Question 2: Work out the start times of bookings for tennis courts
 How can you produce a list of the start times for bookings for tennis courts, for the date '2012-09-21'? Return a list of start time and facility name pairings, ordered by the time.
 ```
 SELECT

@@ -6,7 +6,7 @@ This project contains a compilation of SQL exercises to improve one's skills in 
 - Aggregation using aggregate functions
 - String manipulation
 
-The exercises can be found [here](https://pgexercises.com/).
+The exercises can be found on this [website](https://pgexercises.com/).
 
 # SQL Queries
 The tables can be set up using the included DDL script 'clubdata.sql' with the command

@@ -1,0 +1,114 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "York University Entrance Scholarship",
+        "Lassonde Entrance Scholarship",
+        "Achieved First Class Standing",
+        "GPA: 7.7/9.0"
+      ],
+      "degree": "Bachelor of Science with Honours",
+      "department": "Electrical Engineering and Computer Science",
+      "duration": "2019-2024",
+      "school_name": "York University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh",
+  "highlighted_projects": [
+    {
+      "description": "Co-developed a full stack E-Commerce web application for users to browse a shoe store, packaged in Docker. Utilized Jakarta Server Pages (JSP), JavaScript and CSS for front-end development. Created a SQLite database to organize user information, product stock and purchase history. Login/register page was built utilizing SQLite to verify user credentials and developed an admin panel for updating and deleting products and users.",
+      "git_url": "https://github.com/stevenhaddadcs/4413-Ecommerce-Shoestore",
+      "name": "Shoe E-Commerce Store"
+    },
+    {
+      "description": "Created a model which classified images as \"outdoors\" or \"indoors\" using a dataset of 800 images. Data was preprocessed by partitioning the images and calculating the mean colour intensities of each partition and utilized the 'e1071' package in R to train the model. Image classification achieved an accuracy of 80%.",
+      "name": "Support Vector Machine Image Classification"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Neven Huynh",
+  "others": [
+    {
+      "bullets": [
+        "Gardening",
+        "Fishing",
+        "Gaming",
+        "NBA"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Implemented various software projects, adhering to best practices and clean coding principles to deliver scalable and efficient solutions. Collaborated with a dynamic team, participating in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participate in regular code reviews to maintain high-quality standards and gain vauable insights from feedback. Continously explore and integrate new technologies and tools to enhance project outcomes and expand technical expertise.",
+      "duration": "2024-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Unit Testing"
+    ],
+    "familiar": [
+      "Docker",
+      "MySQL",
+      "PostgreSQL",
+      "AWS",
+      "R",
+      "Jakarta Servlet"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development. Excited by the ever-evolving nature of the software industry, I am passionate about leveraging technology to address complex challenges and build scalable, user-focused solutions that make a difference. I thrive on continous learning and am eager to contribute to innovative, high-impact projects."
+}

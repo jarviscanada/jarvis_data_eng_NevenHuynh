@@ -1,5 +1,5 @@
 # Introduction
-This project contains a compilation of SQL exercises to improve one's skills in writing queries. The Topics include:
+This project contains a compilation of SQL exercises to improve one's skills in writing queries. The database being used is a sample country club and the topics include:
 - CRUD (create, read, update, delete)
 - Basic filtering using the 'WHERE' clause
 - Joining tables 

@@ -9,52 +9,52 @@ This project contains a compilation of SQL exercises to improve one's skills in 
 The exercises can be found on this [website](https://pgexercises.com/).
 
 # SQL Queries
-The tables can be set up using the included DDL script 'clubdata.sql' with the command
+The tables can be set up using the included DDL script `clubdata.sql` with the command
 ```
 # Modify this query for your database (database name, connection, etc)
 psql -U <username> -f clubdata.sql -d postgres -x -q
 ```
-The tables can also be set up using the following SQL script.
+The tables can alternatively be set up using the following SQL script. However, this will not include the records contained in `clubdata.sql`
 
 ###### Table Setup (DDL)
 To create the members table:
-```
-create table cd.members(
-  memid integer not null, 
-  surname varchar(200) not null, 
-  firstname varchar(200) not null, 
-  address varchar(300) not null, 
-  zipcode integer not null, 
-  telephone varchar(20) not null, 
+```sql
+CREATE TABLE cd.members(
+  memid integer NOT NULL, 
+  surname varchar(200) NOT NULL, 
+  firstname varchar(200) NOT NULL, 
+  address varchar(300) NOT NULL, 
+  zipcode integer NOT NULL, 
+  telephone varchar(20) NOT NULL, 
   recommendedby integer, 
-  joindate timestamp not null, 
-  constraint members_pk primary key (memid), 
-  constraint fk_members_recommendedby foreign key (recommendedby) references cd.members(memid) on delete set null
+  joindate timestamp NOT NULL, 
+  CONSTRAINT members_pk PRIMARY KEY (memid), 
+  CONSTRAINT fk_members_recommendedby FOREIGN KEY (recommendedby) REFERENCES cd.members(memid) ON DELETE SET NULL
 );
 ```
 To create the facilities table:
-```
-create table cd.facilities(
-  facid integer not null, 
-  name varchar(100) not null, 
-  membercost numeric not null, 
-  guestcost numeric not null, 
-  initialoutlay numeric not null, 
-  monthlymaintenance numeric not null, 
-  constraint facilities_pk primary key (facid)
+```sql
+CREATE TABLE cd.facilities(
+  facid integer NOT NULL, 
+  name varchar(100) NOT NULL, 
+  membercost numeric NOT NULL, 
+  guestcost numeric NOT NULL, 
+  initialoutlay numeric NOT NULL, 
+  monthlymaintenance numeric NOT NULL, 
+  CONSTRAINT facilities_pk PRIMARY KEY (facid)
 );
 ```
 To create the bookings table:
-```
-create table cd.bookings(
-  bookid integer not null, 
-  facid integer not null, 
-  memid integer not null, 
-  starttime timestamp not null, 
-  slots integer not null, 
-  constraint bookings_pk primary key (bookid), 
-  constraint fk_bookings_facid foreign key (facid) references cd.facilities(facid), 
-  constraint fk_bookings_memid foreign key (memid) references cd.members(memid)
+```sql
+CREATE TABLE cd.bookings(
+  bookid integer NOT NULL, 
+  facid integer NOT NULL, 
+  memid integer NOT NULL, 
+  starttime timestamp NOT NULL, 
+  slots integer NOT NULL, 
+  CONSTRAINT bookings_pk PRIMARY KEY (bookid), 
+  CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid), 
+  CONSTRAINT fk_bookings_memid FOREIGN KEY (memid) REFERENCES cd.members(memid)
 );
 
 ```
@@ -62,7 +62,7 @@ create table cd.bookings(
 ###### Question 1: Insert some data into a table
 The club is adding a new facility - a spa. We need to add it into the facilities table. Use the following values:
 facid: 9, Name: 'Spa', membercost: 20, guestcost: 30, initialoutlay: 100000, monthlymaintenance: 800.
-```
+```sql
 INSERT INTO cd.facilities (
   facid, NAME, membercost, guestcost, initialoutlay, monthlymaintenance
 ) 
@@ -74,7 +74,7 @@ VALUES
 ###### Question 2: Insert calculated data into a table
 Let's try adding the spa to the facilities table again. This time, though, we want to automatically generate the value for the next facid, rather than specifying it as a constant. Use the following values for everything else:
 Name: 'Spa', membercost: 20, guestcost: 30, initialoutlay: 100000, monthlymaintenance: 800.
-```
+```sql
 INSERT INTO cd.facilities(
   facid, name, membercost, guestcost, initialoutlay, monthlymaintenance
 )
@@ -84,7 +84,7 @@ VALUES
 
 ###### Question 3: Update some existing data
 We made a mistake when entering the data for the second tennis court. The initial outlay was 10000 rather than 8000: you need to alter the data to fix the error.
-```
+```sql
 UPDATE
 	cd.facilities
 SET 
@@ -95,7 +95,7 @@ WHERE
 
 ###### Question 4: Update a row based on the contents of another row
 We want to alter the price of the second tennis court so that it costs 10% more than the first one. Try to do this without using constant values for the prices, so that we can reuse the statement if we want to.
-```
+```sql
 UPDATE 
 	cd.facilities
 SET
@@ -107,13 +107,13 @@ WHERE
 
 ###### Question 5: Delete all bookings
 As part of a clearout of our database, we want to delete all bookings from the cd.bookings table. How can we accomplish this?
-```
+```sql
 DELETE FROM cd.bookings;
 ```
 
 ###### Question 6: Delete a member from the cd.members table
 We want to remove member 37, who has never made a booking, from our database. How can we achieve that?
-```
+```sql
 DELETE 
 FROM 
 	cd.members 
@@ -123,7 +123,7 @@ WHERE
 ### Basics
 ###### Question 1: Control which rows are retrieved - part 2
 How can you produce a list of facilities that charge a fee to members, and that fee is less than 1/50th of the monthly maintenance cost? Return the facid, facility name, member cost, and monthly maintenance of the facilities in question.
-```
+```sql
 SELECT
 	facid,
 	name,
@@ -138,7 +138,7 @@ WHERE
 
 ###### Question 2: Basic string search
 How can you produce a list of all facilities with the word 'Tennis' in their name?
-```
+```sql
 SELECT
 	*
 FROM
@@ -149,7 +149,7 @@ WHERE
 
 ###### Question 3: Matching against multiple possible values
 How can you retrieve the details of facilities with ID 1 and 5? Try to do it without using the OR operator.
-```
+```sql
 SELECT
 	*
 FROM
@@ -160,7 +160,7 @@ WHERE
 
 ###### Question 4: Working with dates
 How can you produce a list of members who joined after the start of September 2012? Return the memid, surname, firstname, and joindate of the members in question.
-```
+```sql
 SELECT
 	memid, 
   surname, 
@@ -174,7 +174,7 @@ WHERE
 
 ###### Question 5: Combining results from multiple queries
 You, for some reason, want a combined list of all surnames and all facility names
-```
+```sql
 SELECT
 	surname
 FROM
@@ -189,7 +189,7 @@ FROM
 ### Join 
 ###### Question 1: Retrieve the start times of members' bookings
 How can you produce a list of the start times for bookings by members named 'David Farrell'?
-```
+```sql
 SELECT
 	starttime
 FROM
@@ -204,7 +204,7 @@ WHERE
 
 ###### Question 2: Work out the start times of bookings for tennis courts
 How can you produce a list of the start times for bookings for tennis courts, for the date '2012-09-21'? Return a list of start time and facility name pairings, ordered by the time.
-```
+```sql
 SELECT
 	cd.bookings.starttime AS start,
 	cd.facilities.name AS name
@@ -222,7 +222,7 @@ ORDER BY
 
 ###### Question 3: Produce a list of all members, along with their recommender
 How can you output a list of all members, including the individual who recommended them (if any)? Ensure that results are ordered by (surname, firstname).
-```
+```sql
 SELECT
 	mem.firstname AS memfname,
 	mem.surname AS memsname,
@@ -240,7 +240,7 @@ ORDER BY
 
 ###### Question 4: Product a list of all members who have recommended another member
 How can you output a list of all members who have recommended another member? Ensure that there are no duplicates in the list, and that results are ordered by (surname, firstname).
-```
+```sql
 SELECT
 	DISTINCT rec.firstname AS firstname,
 	rec.surname AS surname
@@ -257,7 +257,7 @@ ORDER BY
 
 ###### Question 5: Product a list of all members, along with their recommender without joins
 How can you output a list of all members, including the individual who recommended them (if any), without using any joins? Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered.
-```
+```sql
 SELECT
 	DISTINCT mem.firstname || ' ' || mem.surname AS member,
 	(
@@ -276,7 +276,7 @@ ORDER BY
 ### Aggregation
 ###### Question 1: Count the number of recommendations each member makes
 Produce a count of the number of recommendations each member has made. Order by member ID.
-```
+```sql
 SELECT
 	recommendedby,
 	count(*)
@@ -292,7 +292,7 @@ ORDER BY
 
 ###### Question 2: List the total slots booked per facility
 Produce a list of the total number of slots booked per facility. For now, just produce an output table consisting of facility id and slots, sorted by facility id.
-```
+```sql
 SELECT
 	facid,
 	SUM(slots) AS "Total Slots"
@@ -306,7 +306,7 @@ ORDER BY
 
 ###### Question 3: List the total slots booked per facility in a given month
 Produce a list of the total number of slots booked per facility in the month of September 2012. Produce an output table consisting of facility id and slots, sorted by the number of slots.
-```
+```sql
 SELECT
 	facid,
 	SUM(slots) AS "Total Slots"
@@ -322,7 +322,7 @@ ORDER BY
 
 ###### Question 4: List the total slots booked per facility per month
 Produce a list of the total number of slots booked per facility per month in the year of 2012. Produce an output table consisting of facility id and slots, sorted by the id and month.
-```
+```sql
 SELECT
 	facid,
 	EXTRACT(MONTH FROM starttime) AS month,
@@ -341,7 +341,7 @@ ORDER BY
 
 ###### Question 5: Find the count of members who have made at least one booking
 Find the total number of members (including guests) who have made at least one booking.
-```
+```sql
 SELECT
 	COUNT(DISTINCT memid)
 FROM
@@ -350,7 +350,7 @@ FROM
 
 ###### Question 6: List each member's first booking after September 1st 2012
 Produce a list of each member name, id, and their first booking after September 1st 2012. Order by member ID.
-```
+```sql
 SELECT
 	DISTINCT mem.surname,
 	mem.firstname,
@@ -373,7 +373,7 @@ ORDER BY
 
 ###### Question 7: Produce a list of member names, with each row containing the total member count
 Produce a list of member names, with each row containing the total member count. Order by join date, and include guest members.
-```
+```sql
 SELECT
 	COUNT(*) OVER(),
 	firstname,
@@ -386,7 +386,7 @@ ORDER BY
 
 ###### Question 8: Produce a numbered list of members
 Produce a monotonically increasing numbered list of members (including guests), ordered by their date of joining. Remember that member IDs are not guaranteed to be sequential.
-```
+```sql
 SELECT
 	ROW_NUMBER() OVER(ORDER BY joindate),
 	firstname,
@@ -399,7 +399,7 @@ ORDER BY
 
 ###### Question 9: Output the facility id that has the highest number of slots booked, again
 Output the facility id that has the highest number of slots booked. Ensure that in the event of a tie, all tieing results get output.
-```
+```sql
 SELECT
 	facid,
 	total
@@ -421,7 +421,7 @@ WHERE
 ### String 
 ###### Question 1: Format the names of members
 Output the names of all members, formatted as 'Surname, Firstname'
-```
+```sql
 SELECT 
 	surname || ', ' || firstname AS name
 FROM 
@@ -430,7 +430,7 @@ FROM
 
 ###### Question 2: Find telephone numbers with parentheses
 You've noticed that the club's member table has telephone numbers with very inconsistent formatting. You'd like to find all the telephone numbers that contain parentheses, returning the member ID and telephone number sorted by member ID.
-```
+```sql
 SELECT 
 	memid,
 	telephone
@@ -442,7 +442,7 @@ WHERE
 
 ###### Question 3: Count the number of members whose surname starts with each letter of the alphabet
 You'd like to produce a count of how many members you have whose surname starts with each letter of the alphabet. Sort by the letter, and don't worry about printing out a letter if the count is 0.
-```
+```sql
 SELECT 
 	SUBSTR(surname, 1, 1) AS letter,
 	count(*) AS count

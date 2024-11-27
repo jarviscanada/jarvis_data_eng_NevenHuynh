@@ -2,7 +2,7 @@
 
 -- 1. Insert some data into the facilities table
 INSERT INTO cd.facilities (
-  facid, NAME, membercost, guestcost, initialoutlay, monthlymaintenance
+  facid, name, membercost, guestcost, initialoutlay, monthlymaintenance
 )
 VALUES
   (9, 'Spa', 20, 30, 100000, 800);
@@ -16,20 +16,20 @@ VALUES
 
 -- 3. Update row in the facilities table
 UPDATE
-    cd.facilities
+	cd.facilities
 SET
-    initialoutlay=10000
+	initialoutlay=10000
 WHERE
-    facid=1;
+	facid=1;
 
 -- 4. Update row in the facilities table using subqueries to get the prices of the previous row
 UPDATE
-    cd.facilities
+	cd.facilities
 set
 	membercost = (SELECT membercost FROM cd.facilities WHERE facid = 0) * 1.1,
 	guestcost = (SELECT guestcost FROM cd.facilities WHERE facid = 0) * 1.1
 WHERE
-    facid = 1;
+	facid = 1;
 
 -- 5. Delete all rows from the bookings table
 DELETE FROM cd.bookings;
@@ -37,9 +37,9 @@ DELETE FROM cd.bookings;
 -- 6. Delete a row from the members table
 DELETE
 FROM
-    cd.members
+	cd.members
 WHERE
-    memid = 37;
+	memid = 37;
 
 -- Basics
 

@@ -64,7 +64,7 @@ The club is adding a new facility - a spa. We need to add it into the facilities
 facid: 9, Name: 'Spa', membercost: 20, guestcost: 30, initialoutlay: 100000, monthlymaintenance: 800.
 ```sql
 INSERT INTO cd.facilities (
-  facid, NAME, membercost, guestcost, initialoutlay, monthlymaintenance
+  facid, name, membercost, guestcost, initialoutlay, monthlymaintenance
 ) 
 VALUES 
   (9, 'Spa', 20, 30, 100000, 800);
@@ -163,9 +163,9 @@ How can you produce a list of members who joined after the start of September 20
 ```sql
 SELECT
 	memid, 
-  surname, 
-  firstname, 
-  joindate
+	surname, 
+	firstname, 
+	joindate
 FROM
 	cd.members
 WHERE

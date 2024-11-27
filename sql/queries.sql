@@ -122,7 +122,7 @@ WHERE
 ORDER BY
 	starttime ASC
 
--- 3. Join the cd.members table with itself to match the recommendedby column with the memid column
+-- 3. Join the cd.members table with itself to match the recommendedby column with the memid column to produce a list of members with their recommender
 SELECT
 	mem.firstname AS memfname,
 	mem.surname AS memsname,
@@ -137,7 +137,7 @@ ORDER BY
 	memsname,
 	memfname ASC;
 
--- 4. Join the cd.members table with itself to match the recommendedby column with the memid column
+-- 4. Join the cd.members table with itself to match the recommendedby column with the memid column to produce a list of members who have recommended another member
 SELECT
 	DISTINCT rec.firstname AS firstname,
 	rec.surname AS surname
@@ -267,7 +267,7 @@ FROM
 ORDER BY
 	joindate;
 
--- 9. Finds the facid and the total number of slots for the facility with the highest total bookings
+-- 9. Find the facid and the total number of slots for the facility with the highest total bookings
 SELECT
 	facid,
 	total

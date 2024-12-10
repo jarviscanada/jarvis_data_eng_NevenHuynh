@@ -13,10 +13,10 @@ public interface JavaGrep {
 
   /**
    * Traverse a given directory and return all files
-   * @param rootDir input directory
+   * @param rootPath input directory
    * @return files under the rootDir
    */
-  List<File> listFiles(String rootDir);
+  List<File> listFiles(String rootPath);
 
   /**
    * Read a file and return all the lines

@@ -34,7 +34,7 @@ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [roo
 As this program reads files and stores each line in memory, it faces memory issues when processing large files. To mitigate this issue, Java Streams and Lambda expressions can be used to avoid loading entire files into memory and instead, process files by each line at a time.
 
 # Test
-The program was tested manually using sample files to verify file searching,line reading and pattern matching.
+The program was tested manually using sample files to verify file searching, line reading and pattern matching.
 
 # Deployment
 The application was dockerized as a Docker image, available on DockerHub.

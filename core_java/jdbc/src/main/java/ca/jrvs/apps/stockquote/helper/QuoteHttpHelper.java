@@ -31,7 +31,6 @@ public class QuoteHttpHelper {
     try {
       Response response = client.newCall(request).execute();
       String responseString = response.body().string();
-      System.out.println(responseString);
       return toObjectFromJson(responseString, Quote.class);
     } catch (JsonMappingException e) {
       e.printStackTrace();
@@ -47,15 +46,5 @@ public class QuoteHttpHelper {
     this.apiKey = apiKey;
     this.client = client;
   }
-  public static void main(String[] args){
 
-    String apiKey = "cc5c24148dmsh6d6d9644eb647ccp183ebbjsn3f9c5aa36327";
-    String symbol = "MSFT";
-    OkHttpClient client = new OkHttpClient();
-
-    QuoteHttpHelper quoteHttpHelper = new QuoteHttpHelper(apiKey, client);
-    Quote quote = quoteHttpHelper.fetchQuoteInfo(symbol);
-    System.out.println(quote.getTicker());
-    System.out.println(quote.toString());
-  }
 }

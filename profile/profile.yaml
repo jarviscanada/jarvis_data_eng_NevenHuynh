@@ -24,6 +24,7 @@ skills:
     - JavaScript
     - Python
     - Unit Testing
+    - Maven
   # At least 5 skills
   familiar:
     - Docker
@@ -39,28 +40,13 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Core Java Apps"
-    git_url: "/core_java"
-    description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+    description: "Developed an automated system to monitor server performance metrics across a network of Linux servers. It collects hardware specifications as well as resource usage data (e.g. CPU, memory, disk) in real-time utilising bash scripts and crontab to automate the execution of the scripts. The data is then saved in a PostgreSQL database hosted in a Docker container."
+  - name: "RDBMS and SQL"
+    git_url: "/sql"
+    description: "Practiced SQL skills by completing a compilation of PostgreSQL exercises. The dataset used is a made-up sample country club with a set of members, facilities, and booking history for the facilities."
+  - name: "Grep App"
+    git_url: "/core_java/grep"
+    description: "Developed a Java based tool that mimics the usage of the grep command in Linux. The app recursively searches a specified file directory for any files and searches each file for a line of text matching a specified regular expression. All matching lines are then outputted to an output file specified by the user. The application was dockerized as a Docker image, available on DockerHub."
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -81,9 +67,9 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
-    duration: "2024-present"
+    duration: "Nov 2024 - present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Implemented various software projects, adhering to best practices and clean coding principles to deliver scalable and efficient solutions. Collaborated with a dynamic team, participating in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participate in regular code reviews to maintain high-quality standards and gain vauable insights from feedback. Continously explore and integrate new technologies and tools to enhance project outcomes and expand technical expertise."
+    description: "Implemented various software projects using Linux, SQL, Docker, Git, Java, Maven, and JDBC. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain vauable insights from feedback. Continously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise."
 
 #List of edcuation
 education: 
@@ -104,7 +90,7 @@ others:
   - title: "Activities/Hobbies"
     #list of items
     bullets:
-      - "Gardening"
-      - "Fishing"
-      - "Gaming"
-      - "NBA"
+      - "Backyard gardening. I love growing my own food and trying new varieties of crops that can't be found in grocery stores."
+      - "Fishing. I like spending time outdoors and relaxing in nature. Biggest catch was a ~5lb channel catfish."
+      - "Gaming. I play a variety of video games but most of the time, I play gacha games like Genshin Impact and Wuthering Waves. Once placed top 33 Grandmasters in Smite."
+      - "NBA. Big Toronto Raptors fan. Current favourite player is Scottie Barnes."

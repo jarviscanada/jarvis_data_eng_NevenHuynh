@@ -42,6 +42,7 @@ public class Quote {
   private double change;
   @JsonProperty("10. change percent")
   private String changePercent;
+
   private Timestamp timestamp; //time when the info was pulled
 
   public String getTicker() { return ticker; }
@@ -64,6 +65,10 @@ public class Quote {
 
   public void setPrice(double price) { this.price = price; }
 
+  public int getVolume() { return volume; }
+
+  public void setVolume(int volume){ this.volume = volume; }
+
   public Date getLatestTradingDay() { return latestTradingDay; }
 
   public void setLatestTradingDay(Date latestTradingDay) { this.latestTradingDay = latestTradingDay; }
@@ -80,6 +85,10 @@ public class Quote {
 
   public void setChangePercent(String changePercent) { this.changePercent = changePercent; }
 
+  public Timestamp getTimestamp() { return timestamp; }
+
+  public void setTimestamp(Timestamp timestamp) { this.timestamp = timestamp; }
+
   public String toString(){
     StringBuilder string = new StringBuilder();
     string.append("{\n");
@@ -94,6 +103,7 @@ public class Quote {
     string.append("        \"08. previous close\": \"").append(previousClose).append("\",\n");
     string.append("        \"09. change\": \"").append(change).append("\",\n");
     string.append("        \"10. change percent\": \"").append(changePercent).append("\"\n");
+    string.append("        \"11. Timestamp\": \"").append(timestamp).append("\"\n");
     string.append("    }\n");
     string.append("}");
     return string.toString();

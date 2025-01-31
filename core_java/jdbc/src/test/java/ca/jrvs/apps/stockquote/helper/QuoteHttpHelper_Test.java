@@ -19,7 +19,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class QuoteHttpHelperTest {
+public class QuoteHttpHelper_Test {
 
   private QuoteHttpHelper quoteHttpHelper;
   @Mock
@@ -41,7 +41,7 @@ public class QuoteHttpHelperTest {
 
     String mockJson = "{\n" +
       "    \"Global Quote\": {\n"+
-      "        \"01. symbol\": \"MFST\",\n"+
+      "        \"01. symbol\": \"MSFT\",\n"+
       "        \"02. open\": \"424.01\",\n"+
       "        \"03. high\": \"435.2\",\n"+
       "        \"04. low\": \"423.5\",\n"+

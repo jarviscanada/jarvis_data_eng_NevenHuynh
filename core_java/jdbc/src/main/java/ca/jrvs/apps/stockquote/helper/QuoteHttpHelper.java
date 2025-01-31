@@ -5,6 +5,7 @@ import ca.jrvs.apps.stockquote.dto.Quote;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import java.io.IOException;
+import java.sql.Timestamp;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -29,9 +30,11 @@ public class QuoteHttpHelper {
         .header("X-RapidAPI-Host", "alpha-vantage.p.rapidapi.com")
         .build();
     try {
-      Response response = client.newCall(request).execute();
-      String responseString = response.body().string();
-      return toObjectFromJson(responseString, Quote.class);
+      Response response = client.newCall(request).execute();  // get HTTP response
+      String responseString = response.body().string();       // Convert the response to a Json string
+      Quote quote = toObjectFromJson(responseString, Quote.class);  // Convert the Json string to a quote object
+      quote.setTimestamp(new Timestamp(System.currentTimeMillis()));  //Set timestamp for the quote
+      return quote;
     } catch (JsonMappingException e) {
       e.printStackTrace();
     } catch (JsonProcessingException e) {
@@ -46,5 +49,4 @@ public class QuoteHttpHelper {
     this.apiKey = apiKey;
     this.client = client;
   }
-
 }

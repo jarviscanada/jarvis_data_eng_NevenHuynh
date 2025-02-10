@@ -5,7 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import ca.jrvs.apps.jdbc.DatabaseConnectionManager;
+import ca.jrvs.apps.stockquote.dao.DatabaseConnectionManager;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Quote;
 import java.sql.Connection;
@@ -42,9 +42,8 @@ public class QuoteDao_Test {
 
   @AfterClass
   public static void closeConnection() throws SQLException {
-    if(connection != null){
+    if(connection != null)
       connection.close();
-    }
   }
 
   @Before

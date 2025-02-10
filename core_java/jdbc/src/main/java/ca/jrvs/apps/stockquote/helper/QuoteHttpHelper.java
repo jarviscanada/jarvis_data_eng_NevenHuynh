@@ -9,8 +9,12 @@ import java.sql.Timestamp;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class QuoteHttpHelper {
+
+  private final Logger logger = LoggerFactory.getLogger(QuoteHttpHelper.class);
 
   private String apiKey;
   private OkHttpClient client;
@@ -30,17 +34,18 @@ public class QuoteHttpHelper {
         .header("X-RapidAPI-Host", "alpha-vantage.p.rapidapi.com")
         .build();
     try {
-      Response response = client.newCall(request).execute();  // get HTTP response
-      String responseString = response.body().string();       // Convert the response to a Json string
-      Quote quote = toObjectFromJson(responseString, Quote.class);  // Convert the Json string to a quote object
-      quote.setTimestamp(new Timestamp(System.currentTimeMillis()));  //Set timestamp for the quote
+      Response response = client.newCall(request).execute();          // get HTTP response
+      String responseString = response.body().string();               // Convert the response to a Json string
+      Quote quote = toObjectFromJson(responseString, Quote.class);    // Convert the Json string to a quote object
+      quote.setTimestamp(new Timestamp(System.currentTimeMillis()));  // Set timestamp for the quote
+      logger.info(quote.toString());
       return quote;
     } catch (JsonMappingException e) {
-      e.printStackTrace();
+      logger.error(e.getMessage());
     } catch (JsonProcessingException e) {
-      e.printStackTrace();
+      logger.error(e.getMessage());
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.error(e.getMessage());
     }
     return null;
   }

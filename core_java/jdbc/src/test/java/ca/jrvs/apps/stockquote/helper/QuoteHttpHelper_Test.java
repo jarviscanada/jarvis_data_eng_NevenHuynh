@@ -59,10 +59,10 @@ public class QuoteHttpHelper_Test {
     when(mockResponse.body()).thenReturn(mockBody);
     when(mockBody.string()).thenReturn(mockJson);
 
-    Quote quote = quoteHttpHelper.fetchQuoteInfo("MFST");
+    Quote quote = quoteHttpHelper.fetchQuoteInfo("MSFT");
 
     assertNotNull(quote);
-    assertEquals("MFST", quote.getTicker());
+    assertEquals("MSFT", quote.getTicker());
     assertEquals(424.01, quote.getOpen(), 0.01);
     assertEquals(435.2, quote.getHigh(), 0.01);
 

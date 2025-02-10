@@ -8,8 +8,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class QuoteDao implements CrudDao<Quote, String>{
+
+  private final Logger logger = LoggerFactory.getLogger(QuoteDao.class);
 
   private final Connection connection;
 
@@ -28,8 +32,9 @@ public class QuoteDao implements CrudDao<Quote, String>{
   public QuoteDao(Connection connection){
     this.connection = connection;
   }
+
   /**
-   * Saves a given entity. Used for create and update
+   * Saves a given entity. Will either create or update the entity in the database.
    *
    * @param entity - must not be null
    * @return The saved entity. Will never be null
@@ -37,8 +42,10 @@ public class QuoteDao implements CrudDao<Quote, String>{
    */
   @Override
   public Quote save(Quote entity) throws IllegalArgumentException {
-    if (entity == null)
+    if (entity == null) {
+      logger.warn("Attempted to save a null Quote entity");
       throw new IllegalArgumentException("Quote entity cannot be null");
+    }
     return findById(entity.getTicker()).isPresent() ? update(entity) : create(entity);
   }
 
@@ -49,6 +56,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
    * @return The created entity
    */
   public Quote create(Quote entity) {
+    logger.info("creating quote");
     try(PreparedStatement statement = this.connection.prepareStatement(INSERT);){
       statement.setString(1, entity.getTicker());
       statement.setDouble(2, entity.getOpen());
@@ -64,7 +72,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
       statement.execute();
       return entity;
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error creating quote. ", e);
       throw new RuntimeException();
     }
   }
@@ -76,6 +84,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
    * @return The updated entity
    */
   public Quote update(Quote entity){
+    logger.info("updating quote");
     try(PreparedStatement statement = this.connection.prepareStatement(UPDATE);){
       statement.setDouble(1, entity.getOpen());
       statement.setDouble(2, entity.getHigh());
@@ -91,7 +100,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
       statement.execute();
       return entity;
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error updating quote.", e);
       throw new RuntimeException();
     }
   }
@@ -100,11 +109,13 @@ public class QuoteDao implements CrudDao<Quote, String>{
    *
    * @param id - must not be null
    * @return Entity with the given id or empty optional if none found
-   * @throws IllegalArgumentException - if id is null
+   * @throws IllegalArgumentException - if id is null or blank
    */
   @Override
   public Optional<Quote> findById(String id) throws IllegalArgumentException {
+    id = id.toUpperCase();
     Quote quote = null;   //Initialize quote object as null to return an empty quote if id is invalid
+    logger.info("finding quote by id");
     try(PreparedStatement statement = this.connection.prepareStatement(GET_ONE);){
       statement.setString(1, id);
       ResultSet resultSet = statement.executeQuery();
@@ -123,7 +134,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
         quote.setTimestamp(resultSet.getTimestamp("timestamp"));
       }
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error finding quote by id.", e);
       throw new RuntimeException(e);
     }
     return Optional.ofNullable(quote); //returns Optional.empty() if quote is null, returns a quote object otherwise
@@ -137,6 +148,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
   @Override
   public Iterable<Quote> findAll() {
     List<Quote> quoteList = new ArrayList<>();
+    logger.info("finding all quotes");
     try(PreparedStatement statement = this.connection.prepareStatement(GET_ALL);){
       ResultSet resultSet = statement.executeQuery();
       while(resultSet.next()){
@@ -155,7 +167,7 @@ public class QuoteDao implements CrudDao<Quote, String>{
         quoteList.add(quote);
       }
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error finding all quotes.", e);
       throw new RuntimeException(e);
     }
     return quoteList;
@@ -165,15 +177,17 @@ public class QuoteDao implements CrudDao<Quote, String>{
    * Deletes the entity with the given id. If the entity is not found, it is silently ignored
    *
    * @param id - must not be null
-   * @throws IllegalArgumentException - if id is null
+   * @throws IllegalArgumentException - if id is null or blank
    */
   @Override
   public void deleteById(String id) throws IllegalArgumentException {
+    id = id.toUpperCase();
+    logger.info("deleting quote by id");
     try(PreparedStatement statement = this.connection.prepareStatement(DELETE);){
       statement.setString(1, id);
       statement.execute();
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error deleting quote by id", e);
       throw new RuntimeException(e);
     }
   }
@@ -183,10 +197,11 @@ public class QuoteDao implements CrudDao<Quote, String>{
    */
   @Override
   public void deleteAll() {
+    logger.info("deleting all quotes");
     try(PreparedStatement statement = this.connection.prepareStatement(DELETE_ALL);){
       statement.execute();
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error deleting all quotes", e);
       throw new RuntimeException(e);
     }
   }

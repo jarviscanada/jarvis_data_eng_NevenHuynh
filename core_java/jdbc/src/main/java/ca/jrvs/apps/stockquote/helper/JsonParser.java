@@ -2,7 +2,6 @@ package ca.jrvs.apps.stockquote.helper;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -45,7 +44,5 @@ public class JsonParser {
     // Extract the "Global Quote" root node and then map the tree to the clazz object
     JsonNode quoteNode = rootNode.get("Global Quote");
     return (T) m.treeToValue(quoteNode, clazz);
-    //m.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-    //return (T) m.readValue(json, clazz);
   }
 }

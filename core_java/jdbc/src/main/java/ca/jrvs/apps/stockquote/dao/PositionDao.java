@@ -8,8 +8,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PositionDao implements CrudDao<Position, String>{
+
+    private final Logger logger = LoggerFactory.getLogger(PositionDao.class);
 
     private Connection connection;
 
@@ -30,7 +34,7 @@ public class PositionDao implements CrudDao<Position, String>{
     }
 
   /**
-   * Saves a given entity. Used for create and update
+   * Saves a given entity. Will either create or update the entity in the database.
    *
    * @param entity - must not be null
    * @return The saved entity. Will never be null
@@ -38,8 +42,10 @@ public class PositionDao implements CrudDao<Position, String>{
    */
   @Override
   public Position save(Position entity) throws IllegalArgumentException {
-    if(entity == null)
+    if(entity == null) {
+      logger.warn("Attempted to save a null Position entity");
       throw new IllegalArgumentException("Position entity cannot be null");
+    }
     return findById(entity.getTicker()).isPresent()? update(entity) : create(entity);
   }
 
@@ -50,6 +56,7 @@ public class PositionDao implements CrudDao<Position, String>{
    * @return The created entity
    */
   public Position create(Position entity){
+    logger.info("creating position");
     try(PreparedStatement statement = this.connection.prepareStatement(INSERT);){
       statement.setString(1, entity.getTicker());
       statement.setInt(2, entity.getNumOfShares());
@@ -57,7 +64,7 @@ public class PositionDao implements CrudDao<Position, String>{
       statement.execute();
       return entity;
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error creating position", e);
       throw new RuntimeException(e);
     }
   }
@@ -69,6 +76,7 @@ public class PositionDao implements CrudDao<Position, String>{
    * @return The created entity
    */
   public Position update(Position entity){
+    logger.info("updating position");
     try(PreparedStatement statement = this.connection.prepareStatement(UPDATE);){
       statement.setInt(1, entity.getNumOfShares());
       statement.setDouble(2, entity.getValuePaid());
@@ -76,7 +84,7 @@ public class PositionDao implements CrudDao<Position, String>{
       statement.execute();
       return entity;
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error updating position", e);
       throw new RuntimeException(e);
     }
   }
@@ -86,10 +94,12 @@ public class PositionDao implements CrudDao<Position, String>{
    *
    * @param id - must not be null
    * @return Entity with the given id or empty optional if none found
-   * @throws IllegalArgumentException - if id is null
+   * @throws IllegalArgumentException - if id is null or blank
    */
   @Override
   public Optional<Position> findById(String id) throws IllegalArgumentException {
+    id = id.toUpperCase();
+    logger.info("finding position by id");
     Position position = null;   //Initialize position object as null to return an empty position if id is invalid
     try(PreparedStatement statement = this.connection.prepareStatement(GET_ONE);){
       statement.setString(1, id);
@@ -101,7 +111,7 @@ public class PositionDao implements CrudDao<Position, String>{
         position.setValuePaid(resultSet.getDouble("value_paid"));
       }
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("error finding position by id", e);
       throw new RuntimeException(e);
     }
     return Optional.ofNullable(position); //returns Optional.empty() if position is null, returns a position object otherwise
@@ -114,6 +124,7 @@ public class PositionDao implements CrudDao<Position, String>{
    */
   @Override
   public Iterable<Position> findAll() {
+    logger.info("finding all positions");
     List<Position> positionList = new ArrayList<>();
     try(PreparedStatement statement = this.connection.prepareStatement(GET_ALL);){
       ResultSet resultSet = statement.executeQuery();
@@ -125,7 +136,7 @@ public class PositionDao implements CrudDao<Position, String>{
         positionList.add(position);
       }
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("Error finding all positions", e);
       throw new RuntimeException(e);
     }
     return positionList;
@@ -135,15 +146,17 @@ public class PositionDao implements CrudDao<Position, String>{
    * Deletes the entity with the given id. If the entity is not found, it is silently ignored
    *
    * @param id - must not be null
-   * @throws IllegalArgumentException - if id is null
+   * @throws IllegalArgumentException - if id is null or blank
    */
   @Override
   public void deleteById(String id) throws IllegalArgumentException {
+    id = id.toUpperCase();
+    logger.info("deleting position by id");
     try(PreparedStatement statement = this.connection.prepareStatement(DELETE);) {
       statement.setString(1, id);
       statement.execute();
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("error deleting position by id", e);
       throw new RuntimeException(e);
     }
   }
@@ -153,10 +166,11 @@ public class PositionDao implements CrudDao<Position, String>{
    */
   @Override
   public void deleteAll() {
+    logger.info("deleting all positions");
     try(PreparedStatement statement = this.connection.prepareStatement(DELETE_ALL);){
       statement.execute();
     } catch (SQLException e){
-      e.printStackTrace();
+      logger.error("error deleting all positions", e);
       throw new RuntimeException(e);
     }
   }

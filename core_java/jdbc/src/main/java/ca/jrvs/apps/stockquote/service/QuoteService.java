@@ -4,8 +4,12 @@ import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Quote;
 import ca.jrvs.apps.stockquote.helper.QuoteHttpHelper;
 import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class QuoteService {
+
+  private final Logger logger = LoggerFactory.getLogger(QuoteService.class);
 
   private QuoteDao dao;
   private QuoteHttpHelper httpHelper;
@@ -20,9 +24,11 @@ public class QuoteService {
    * @return Latest quote information or empty optional if ticker symbol not found
    */
   public Optional<Quote> fetchQuoteDataFromAPI(String ticker) {
+    logger.info("fetching quote data from API");
     Quote quote = httpHelper.fetchQuoteInfo(ticker);
-    if(quote.getTicker() != null)
-      dao.save(quote);
-    return Optional.ofNullable(quote);
+    if(quote.getTicker() == null)
+      return Optional.empty();
+    dao.save(quote);
+    return Optional.of(quote);
   }
 }

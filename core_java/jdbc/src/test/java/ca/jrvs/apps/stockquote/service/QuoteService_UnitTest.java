@@ -1,4 +1,4 @@
-package ca.jrvs.apps.stockquote.helper;
+package ca.jrvs.apps.stockquote.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,7 +10,7 @@ import static org.mockito.Mockito.when;
 
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Quote;
-import ca.jrvs.apps.stockquote.service.QuoteService;
+import ca.jrvs.apps.stockquote.helper.QuoteHttpHelper;
 import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package ca.jrvs.apps.stockquote.helper;
+package ca.jrvs.apps.stockquote.service;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import ca.jrvs.apps.stockquote.dao.DatabaseConnectionManager;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Quote;
-import ca.jrvs.apps.stockquote.service.QuoteService;
+import ca.jrvs.apps.stockquote.helper.QuoteHttpHelper;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Optional;

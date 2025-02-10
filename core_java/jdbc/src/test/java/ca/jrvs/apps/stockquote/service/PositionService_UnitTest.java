@@ -1,4 +1,4 @@
-package ca.jrvs.apps.stockquote.helper;
+package ca.jrvs.apps.stockquote.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.never;
@@ -9,7 +9,6 @@ import ca.jrvs.apps.stockquote.dao.PositionDao;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Position;
 import ca.jrvs.apps.stockquote.dto.Quote;
-import ca.jrvs.apps.stockquote.service.PositionService;
 import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;

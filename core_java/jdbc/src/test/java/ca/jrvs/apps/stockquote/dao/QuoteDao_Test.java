@@ -1,12 +1,10 @@
-package ca.jrvs.apps.stockquote.helper;
+package ca.jrvs.apps.stockquote.dao;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import ca.jrvs.apps.stockquote.dao.DatabaseConnectionManager;
-import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dto.Quote;
 import java.sql.Connection;
 import java.sql.Date;

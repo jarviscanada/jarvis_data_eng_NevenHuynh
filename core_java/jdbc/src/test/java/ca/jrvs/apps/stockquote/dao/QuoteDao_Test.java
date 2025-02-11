@@ -27,7 +27,7 @@ public class QuoteDao_Test {
 
   @BeforeClass
   public static void setUp() {
-    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "stock_quote", "postgres", "password");
+    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "stockquote_test", "postgres", "password");
     try{
       connection = dcm.getConnection();
       connection.setAutoCommit(false);  // Prevent auto-committing changes

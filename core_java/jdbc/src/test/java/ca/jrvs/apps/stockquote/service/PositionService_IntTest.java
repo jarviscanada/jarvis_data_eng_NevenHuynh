@@ -28,7 +28,7 @@ public class PositionService_IntTest {
 
   @BeforeClass
   public static void setUp() throws SQLException {
-    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "stock_quote",
+    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "stockquote_test",
         "postgres", "password");
     connection = dcm.getConnection();
     connection.setAutoCommit(false);

@@ -105,6 +105,6 @@ dependencies into the container
 4. Pushed the docker image to DockerHub
 
 # Improvement 
-- Provide a user-friendly web-based UI to visualize stock performance.
+- Provide a user-friendly web-based UI to visualize stock performance
 - Add request limits to prevent API abuse (Alpha Vantage API is limited to five requests per minute)
 - Add an account balance to limit how much users can purchase to simulate a real portfolio

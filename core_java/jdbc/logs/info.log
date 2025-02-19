@@ -1851,3 +1851,57 @@ java.lang.IllegalArgumentException: Invalid ticker symbol
 2025-02-11 11:36:20,735 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
 2025-02-11 11:36:20,798 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
 2025-02-11 11:36:20,799 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 13:46:15,513 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:15,513 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 13:46:23,916 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 13:46:25,045 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "PLTR",
+        "02. open": "112.03",
+        "03. high": "116.76",
+        "04. low": "108.72",
+        "05. price": "116.65",
+        "06. volume": "99938072",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "110.85",
+        "09. change": "5.8",
+        "10. change percent": "5.2323%"
+        "11. Timestamp": "2025-02-11 13:46:25.045"
+    }
+}
+2025-02-11 13:46:25,045 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 13:46:25,048 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-11 13:46:25,052 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 13:46:25,052 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 13:46:25,053 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:25,054 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:25,055 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 13:46:26,002 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:26,002 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 13:46:32,336 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 13:46:32,336 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:32,337 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-11 13:46:34,408 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:34,408 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 14:40:15,751 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 14:40:15,751 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 14:40:20,766 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 14:40:21,632 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "BBAI",
+        "02. open": "9.43",
+        "03. high": "9.7",
+        "04. low": "8.2",
+        "05. price": "8.72",
+        "06. volume": "187527724",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "8.59",
+        "09. change": "0.13",
+        "10. change percent": "1.5134%"
+        "11. Timestamp": "2025-02-11 14:40:21.632"
+    }
+}
+2025-02-11 14:40:21,632 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 14:40:21,635 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-12 13:02:11,193 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-12 13:02:11,194 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions

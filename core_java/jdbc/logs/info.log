@@ -1,0 +1,1907 @@
+2025-02-10 17:11:19,988 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:11:19,988 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:12:06,239 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:12:07,430 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "UBER",
+        "02. open": "77.1",
+        "03. high": "78.99",
+        "04. low": "76.81",
+        "05. price": "78.61",
+        "06. volume": "42465178",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "74.6",
+        "09. change": "4.01",
+        "10. change percent": "5.3753%"
+        "11. Timestamp": "2025-02-10 17:12:07.43"
+    }
+}
+2025-02-10 17:12:07,431 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:12:07,434 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:12:20,511 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:12:20,732 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "UBER",
+        "02. open": "77.1",
+        "03. high": "78.99",
+        "04. low": "76.81",
+        "05. price": "78.61",
+        "06. volume": "42465189",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "74.6",
+        "09. change": "4.01",
+        "10. change percent": "5.3753%"
+        "11. Timestamp": "2025-02-10 17:12:20.732"
+    }
+}
+2025-02-10 17:12:20,732 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:12:20,735 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:12:20,737 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:12:20,737 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:12:20,738 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:12:20,739 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:12:20,740 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 17:12:30,861 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:12:31,086 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 17:12:31.086"
+    }
+}
+2025-02-10 17:12:34,163 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:12:34,163 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:12:59,635 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:12:59,635 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:12:59,637 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 17:13:01,637 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:13:01,637 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:13:09,134 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:13:09,134 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:13:09,136 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own invalid
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.controller.StockQuoteController.initClient(StockQuoteController.java:76)
+	at ca.jrvs.apps.stockquote.Main.main(Main.java:49)
+2025-02-10 17:13:33,355 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:13:33,632 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "UBER",
+        "02. open": "77.1",
+        "03. high": "78.99",
+        "04. low": "76.81",
+        "05. price": "78.61",
+        "06. volume": "42465591",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "74.6",
+        "09. change": "4.01",
+        "10. change percent": "5.3753%"
+        "11. Timestamp": "2025-02-10 17:13:33.632"
+    }
+}
+2025-02-10 17:13:33,632 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:13:33,633 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:14:12,334 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:14:12,434 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "UBER",
+        "02. open": "77.1",
+        "03. high": "78.99",
+        "04. low": "76.81",
+        "05. price": "78.61",
+        "06. volume": "42468699",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "74.6",
+        "09. change": "4.01",
+        "10. change percent": "5.3753%"
+        "11. Timestamp": "2025-02-10 17:14:12.434"
+    }
+}
+2025-02-10 17:14:12,434 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:14:12,436 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:14:12,439 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:14:12,439 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:14:12,440 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:14:12,441 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.controller.StockQuoteController.initClient(StockQuoteController.java:64)
+	at ca.jrvs.apps.stockquote.Main.main(Main.java:49)
+2025-02-10 17:14:22,054 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:14:22,054 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:16:15,301 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:16:15,301 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:16:25,136 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:16:25,136 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:16:25,138 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 17:16:29,552 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:16:29,552 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:51:35,658 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 17:51:35,659 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:52:15,268 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,280 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:15,282 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,284 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:52:15,285 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,286 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,287 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,287 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 17:52:15,288 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:52:15,293 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,294 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:15,295 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,296 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,297 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,297 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,300 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,301 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:15,302 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,303 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:52:15,304 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,305 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,305 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,306 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 17:52:15,307 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting all positions
+2025-02-10 17:52:15,307 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 17:52:15,310 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,312 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:15,312 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,313 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,314 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,314 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,317 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:15,318 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:15,319 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,319 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:15,320 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 17:52:15,321 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:15,468 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:16,225 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "NVDA",
+        "02. open": "130.0",
+        "03. high": "135.0",
+        "04. low": "129.97",
+        "05. price": "133.57",
+        "06. volume": "216104522",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "129.84",
+        "09. change": "3.73",
+        "10. change percent": "2.8728%"
+        "11. Timestamp": "2025-02-10 17:52:16.225"
+    }
+}
+2025-02-10 17:52:16,225 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:16,228 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:52:16,229 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:16,229 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:16,230 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,230 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,231 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 17:52:16,232 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,232 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:52:16,232 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,233 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 17:52:16,234 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,236 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:16,689 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 17:52:16.689"
+    }
+}
+2025-02-10 17:52:16,689 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:52:16,689 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:16,691 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.sellTest2(PositionService_IntTest.java:106)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:16,695 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:17,093 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "413.8",
+        "03. high": "415.4624",
+        "04. low": "410.92",
+        "05. price": "412.22",
+        "06. volume": "20789496",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "409.75",
+        "09. change": "2.47",
+        "10. change percent": "0.6028%"
+        "11. Timestamp": "2025-02-10 17:52:17.093"
+    }
+}
+2025-02-10 17:52:17,093 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,094 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,095 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,095 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,096 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,097 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,097 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:17,098 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,099 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,099 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,100 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,100 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,101 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:17,102 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,102 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,102 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,103 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,104 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 17:52:17,106 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:17,219 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "PLTR",
+        "02. open": "112.04",
+        "03. high": "116.76",
+        "04. low": "108.72",
+        "05. price": "116.65",
+        "06. volume": "99296642",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "110.85",
+        "09. change": "5.8",
+        "10. change percent": "5.2323%"
+        "11. Timestamp": "2025-02-10 17:52:17.219"
+    }
+}
+2025-02-10 17:52:17,219 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,220 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,221 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,221 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,221 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,222 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.buyTest2(PositionService_IntTest.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,224 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:17,324 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 17:52:17.324"
+    }
+}
+2025-02-10 17:52:17,324 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,324 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,325 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 17:52:17,326 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.buyTest3(PositionService_IntTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,469 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:52:17,489 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 17:52:17,489 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.sellTest2(PositionService_UnitTest.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,496 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,499 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,499 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.buyTest2(PositionService_UnitTest.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,502 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 17:52:17,502 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.buyTest3(PositionService_UnitTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,537 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,539 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,541 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,541 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:52:17,543 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-10 17:52:17,546 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,547 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,548 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,548 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,552 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,552 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,553 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,554 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 17:52:17,555 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting all quotes
+2025-02-10 17:52:17,566 [main] ERROR ca.jrvs.apps.stockquote.dao.QuoteDao - Error deleting all quotes
+org.postgresql.util.PSQLException: ERROR: update or delete on table "quote" violates foreign key constraint "symbol_fk" on table "position"
+  Detail: Key (symbol)=(MSFT) is still referenced from table "position".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at ca.jrvs.apps.stockquote.dao.QuoteDao.deleteAll(QuoteDao.java:202)
+	at ca.jrvs.apps.stockquote.helper.QuoteDao_Test.deleteAll(QuoteDao_Test.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,578 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,579 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,581 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,582 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,584 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 17:52:17,585 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 17:52:17,586 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting quote by id
+2025-02-10 17:52:17,587 [main] ERROR ca.jrvs.apps.stockquote.dao.QuoteDao - Error deleting quote by id
+org.postgresql.util.PSQLException: ERROR: update or delete on table "quote" violates foreign key constraint "symbol_fk" on table "position"
+  Detail: Key (symbol)=(MSFT) is still referenced from table "position".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at ca.jrvs.apps.stockquote.dao.QuoteDao.deleteById(QuoteDao.java:188)
+	at ca.jrvs.apps.stockquote.helper.QuoteDao_Test.deleteById(QuoteDao_Test.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-10 17:52:17,854 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "424.01",
+        "03. high": "435.2",
+        "04. low": "423.5",
+        "05. price": "434.56",
+        "06. volume": "35647805",
+        "07. latest trading day": "2025-01-25",
+        "08. previous close": "444.06",
+        "09. change": "-9.5",
+        "10. change percent": "-2.1394%"
+        "11. Timestamp": "2025-02-10 17:52:17.854"
+    }
+}
+2025-02-10 17:52:17,869 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:18,204 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:18,272 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 17:52:18,273 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:06:26,988 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,000 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:27,001 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,002 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:06:27,003 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,004 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,004 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,006 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 18:06:27,006 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 18:06:27,010 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,011 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:27,011 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,012 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,013 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,013 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,015 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,016 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:27,017 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,017 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:06:27,018 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,019 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,019 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,020 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 18:06:27,021 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting all positions
+2025-02-10 18:06:27,021 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 18:06:27,023 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,025 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:27,026 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,026 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,027 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,028 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,030 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:27,030 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:27,032 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:27,032 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:06:27,033 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 18:06:27,033 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:06:37,746 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,757 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,759 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,760 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:06:37,761 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-10 18:06:37,765 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,766 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,767 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,768 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,770 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,771 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,772 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,773 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:06:37,773 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting all quotes
+2025-02-10 18:06:37,779 [main] ERROR ca.jrvs.apps.stockquote.dao.QuoteDao - Error deleting all quotes
+org.postgresql.util.PSQLException: ERROR: update or delete on table "quote" violates foreign key constraint "symbol_fk" on table "position"
+  Detail: Key (symbol)=(MSFT) is still referenced from table "position".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at ca.jrvs.apps.stockquote.dao.QuoteDao.deleteAll(QuoteDao.java:202)
+	at ca.jrvs.apps.stockquote.helper.QuoteDao_Test.deleteAll(QuoteDao_Test.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:06:37,786 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,788 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,789 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,789 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,792 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:06:37,793 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:06:37,794 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting quote by id
+2025-02-10 18:06:37,795 [main] ERROR ca.jrvs.apps.stockquote.dao.QuoteDao - Error deleting quote by id
+org.postgresql.util.PSQLException: ERROR: update or delete on table "quote" violates foreign key constraint "symbol_fk" on table "position"
+  Detail: Key (symbol)=(MSFT) is still referenced from table "position".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at ca.jrvs.apps.stockquote.dao.QuoteDao.deleteById(QuoteDao.java:188)
+	at ca.jrvs.apps.stockquote.helper.QuoteDao_Test.deleteById(QuoteDao_Test.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:07:59,993 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 18:07:59,993 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 18:08:09,995 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:08:09,995 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:08:09,998 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 18:08:13,816 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:08:13,816 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:08:13,819 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 18:08:15,293 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-10 18:08:15,293 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-10 18:08:33,022 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,033 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,034 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,035 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:08:33,036 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-10 18:08:33,040 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,041 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,042 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,042 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,044 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,046 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,047 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,047 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:08:33,048 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting all quotes
+2025-02-10 18:08:33,049 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-10 18:08:33,051 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,051 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,052 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,053 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,055 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:33,056 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:08:33,057 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting quote by id
+2025-02-10 18:08:33,057 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:08:47,377 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "424.01",
+        "03. high": "435.2",
+        "04. low": "423.5",
+        "05. price": "434.56",
+        "06. volume": "35647805",
+        "07. latest trading day": "2025-01-25",
+        "08. previous close": "444.06",
+        "09. change": "-9.5",
+        "10. change percent": "-2.1394%"
+        "11. Timestamp": "2025-02-10 18:08:47.376"
+    }
+}
+2025-02-10 18:09:07,794 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "424.01",
+        "03. high": "435.2",
+        "04. low": "423.5",
+        "05. price": "434.56",
+        "06. volume": "35647805",
+        "07. latest trading day": "2025-01-25",
+        "08. previous close": "444.06",
+        "09. change": "-9.5",
+        "10. change percent": "-2.1394%"
+        "11. Timestamp": "2025-02-10 18:09:07.793"
+    }
+}
+2025-02-10 18:09:26,161 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "424.01",
+        "03. high": "435.2",
+        "04. low": "423.5",
+        "05. price": "434.56",
+        "06. volume": "35647805",
+        "07. latest trading day": "2025-01-25",
+        "08. previous close": "444.06",
+        "09. change": "-9.5",
+        "10. change percent": "-2.1394%"
+        "11. Timestamp": "2025-02-10 18:09:26.16"
+    }
+}
+2025-02-10 18:09:32,983 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:32,989 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:37,548 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:09:37,558 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:09:37,561 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.sellTest2(PositionService_UnitTest.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:37,566 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:37,568 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:37,568 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.buyTest2(PositionService_UnitTest.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:37,570 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:37,570 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.helper.PositionService_UnitTest.buyTest3(PositionService_UnitTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:41,752 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:42,617 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "NVDA",
+        "02. open": "130.0",
+        "03. high": "135.0",
+        "04. low": "129.97",
+        "05. price": "133.57",
+        "06. volume": "216209928",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "129.84",
+        "09. change": "3.73",
+        "10. change percent": "2.8728%"
+        "11. Timestamp": "2025-02-10 18:09:42.617"
+    }
+}
+2025-02-10 18:09:42,617 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,627 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-10 18:09:42,629 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:42,629 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,630 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,632 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,634 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 18:09:42,635 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,636 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:09:42,636 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,637 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-10 18:09:42,637 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,640 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:42,736 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 18:09:42.736"
+    }
+}
+2025-02-10 18:09:42,737 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-10 18:09:42,737 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,739 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.sellTest2(PositionService_IntTest.java:106)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:42,743 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:42,845 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "413.8",
+        "03. high": "415.4624",
+        "04. low": "410.92",
+        "05. price": "412.22",
+        "06. volume": "20796056",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "409.75",
+        "09. change": "2.47",
+        "10. change percent": "0.6028%"
+        "11. Timestamp": "2025-02-10 18:09:42.845"
+    }
+}
+2025-02-10 18:09:42,845 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,847 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:09:42,848 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:42,848 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,848 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,849 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,850 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-10 18:09:42,851 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,851 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:42,851 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,852 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,853 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,853 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:09:42,854 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:42,854 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:42,855 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,856 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:42,857 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-10 18:09:42,858 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:43,076 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "PLTR",
+        "02. open": "112.04",
+        "03. high": "116.76",
+        "04. low": "108.72",
+        "05. price": "116.65",
+        "06. volume": "99369349",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "110.85",
+        "09. change": "5.8",
+        "10. change percent": "5.2323%"
+        "11. Timestamp": "2025-02-10 18:09:43.076"
+    }
+}
+2025-02-10 18:09:43,076 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:43,078 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:09:43,079 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:43,079 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:43,080 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:43,081 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.buyTest2(PositionService_IntTest.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:43,082 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:43,188 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 18:09:43.188"
+    }
+}
+2025-02-10 18:09:43,188 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-10 18:09:43,188 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:09:43,190 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-10 18:09:43,190 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.helper.PositionService_IntTest.buyTest3(PositionService_IntTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-02-10 18:09:48,058 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:09:48,650 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:10:05,315 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:10:06,013 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:10:44,640 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:10:45,656 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "413.8",
+        "03. high": "415.4624",
+        "04. low": "410.92",
+        "05. price": "412.22",
+        "06. volume": "20796279",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "409.75",
+        "09. change": "2.47",
+        "10. change percent": "0.6028%"
+        "11. Timestamp": "2025-02-10 18:10:45.656"
+    }
+}
+2025-02-10 18:10:45,656 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:10:45,668 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-10 18:10:45,670 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:10:45,672 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-10 18:10:45,675 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-10 18:10:45,850 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-10 18:10:45.85"
+    }
+}
+2025-02-11 11:07:00,324 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,335 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,337 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,338 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,338 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,339 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,340 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,341 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,342 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 11:07:00,345 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,346 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,347 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,347 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,348 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,349 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,351 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,352 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,352 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,353 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,354 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,354 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,356 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,356 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,357 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting all positions
+2025-02-11 11:07:00,357 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 11:07:00,359 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,360 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,360 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,361 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,362 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,362 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-11 11:07:00,364 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:00,365 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:00,365 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:00,367 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:07:00,367 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-11 11:07:00,368 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:07:08,114 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,124 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,126 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,126 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,127 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-11 11:07:08,131 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,132 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,133 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,134 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,135 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,136 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,137 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,137 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,139 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting all quotes
+2025-02-11 11:07:08,140 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-11 11:07:08,141 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,142 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,143 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,144 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-11 11:07:08,146 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:07:08,146 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:07:08,147 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting quote by id
+2025-02-11 11:07:08,148 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,057 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,068 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,069 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,070 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,072 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,073 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,074 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,074 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,075 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 11:36:18,081 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,082 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,083 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,084 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,085 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,085 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,087 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,088 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,089 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,089 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,090 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,091 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,092 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,092 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,093 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting all positions
+2025-02-11 11:36:18,094 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 11:36:18,096 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,096 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,097 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,097 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,098 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,099 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-11 11:36:18,102 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,103 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,103 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,104 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:18,105 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-11 11:36:18,105 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:18,124 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,126 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,127 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,128 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,129 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-11 11:36:18,133 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,134 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,135 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,136 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,139 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,139 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,140 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,141 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,141 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting all quotes
+2025-02-11 11:36:18,142 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding all quotes
+2025-02-11 11:36:18,145 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,146 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,147 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,149 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-11 11:36:18,151 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,152 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:18,152 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - deleting quote by id
+2025-02-11 11:36:18,154 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:18,781 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "424.01",
+        "03. high": "435.2",
+        "04. low": "423.5",
+        "05. price": "434.56",
+        "06. volume": "35647805",
+        "07. latest trading day": "2025-01-25",
+        "08. previous close": "444.06",
+        "09. change": "-9.5",
+        "10. change percent": "-2.1394%"
+        "11. Timestamp": "2025-02-11 11:36:18.781"
+    }
+}
+2025-02-11 11:36:18,928 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:19,609 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "NVDA",
+        "02. open": "130.09",
+        "03. high": "135.0",
+        "04. low": "129.96",
+        "05. price": "133.57",
+        "06. volume": "216989086",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "129.84",
+        "09. change": "3.73",
+        "10. change percent": "2.8728%"
+        "11. Timestamp": "2025-02-11 11:36:19.609"
+    }
+}
+2025-02-11 11:36:19,609 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,612 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:19,613 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:19,613 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,614 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,614 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,615 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:19,616 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,616 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 11:36:19,616 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,617 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-11 11:36:19,618 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,620 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:19,740 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-11 11:36:19.74"
+    }
+}
+2025-02-11 11:36:19,740 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 11:36:19,740 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,742 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.service.PositionService_IntTest.sellTest2(PositionService_IntTest.java:105)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:19,746 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:19,954 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "413.71",
+        "03. high": "415.4624",
+        "04. low": "410.92",
+        "05. price": "412.22",
+        "06. volume": "20817919",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "409.75",
+        "09. change": "2.47",
+        "10. change percent": "0.6028%"
+        "11. Timestamp": "2025-02-11 11:36:19.954"
+    }
+}
+2025-02-11 11:36:19,954 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,956 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:19,956 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:19,957 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,957 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,958 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,959 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 11:36:19,959 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,960 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:19,960 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,960 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,961 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,962 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-11 11:36:19,962 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:19,962 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:19,963 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,964 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:19,965 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - updating position
+2025-02-11 11:36:19,967 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:20,181 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "PLTR",
+        "02. open": "112.03",
+        "03. high": "116.76",
+        "04. low": "108.72",
+        "05. price": "116.65",
+        "06. volume": "99938072",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "110.85",
+        "09. change": "5.8",
+        "10. change percent": "5.2323%"
+        "11. Timestamp": "2025-02-11 11:36:20.181"
+    }
+}
+2025-02-11 11:36:20,181 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:20,182 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-11 11:36:20,183 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:20,183 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:20,183 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:20,184 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.service.PositionService_IntTest.buyTest2(PositionService_IntTest.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:20,187 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:20,291 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "null",
+        "02. open": "0.0",
+        "03. high": "0.0",
+        "04. low": "0.0",
+        "05. price": "0.0",
+        "06. volume": "0",
+        "07. latest trading day": "null",
+        "08. previous close": "0.0",
+        "09. change": "0.0",
+        "10. change percent": "null"
+        "11. Timestamp": "2025-02-11 11:36:20.291"
+    }
+}
+2025-02-11 11:36:20,291 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:20,291 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 11:36:20,293 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 11:36:20,294 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.service.PositionService_IntTest.buyTest3(PositionService_IntTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:20,341 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 11:36:20,348 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 11:36:20,348 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error selling stock
+java.lang.IllegalArgumentException: You do not own Non existent symbol
+
+	at ca.jrvs.apps.stockquote.service.PositionService.sell(PositionService.java:74)
+	at ca.jrvs.apps.stockquote.service.PositionService_UnitTest.sellTest2(PositionService_UnitTest.java:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:20,351 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:20,353 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:20,353 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Number of shares cannot exceed volume
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:39)
+	at ca.jrvs.apps.stockquote.service.PositionService_UnitTest.buyTest2(PositionService_UnitTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:20,354 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 11:36:20,354 [main] ERROR ca.jrvs.apps.stockquote.service.PositionService - Error buying stock
+java.lang.IllegalArgumentException: Invalid ticker symbol
+	at ca.jrvs.apps.stockquote.service.PositionService.buy(PositionService.java:41)
+	at ca.jrvs.apps.stockquote.service.PositionService_UnitTest.buyTest3(PositionService_UnitTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.mockito.internal.runners.DefaultInternalRunner$1$1.evaluate(DefaultInternalRunner.java:55)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:100)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:107)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:42)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-11 11:36:20,368 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:20,735 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:20,798 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 11:36:20,799 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 13:46:15,513 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:15,513 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 13:46:23,916 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 13:46:25,045 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "PLTR",
+        "02. open": "112.03",
+        "03. high": "116.76",
+        "04. low": "108.72",
+        "05. price": "116.65",
+        "06. volume": "99938072",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "110.85",
+        "09. change": "5.8",
+        "10. change percent": "5.2323%"
+        "11. Timestamp": "2025-02-11 13:46:25.045"
+    }
+}
+2025-02-11 13:46:25,045 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 13:46:25,048 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - updating quote
+2025-02-11 13:46:25,052 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - buying stock
+2025-02-11 13:46:25,052 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 13:46:25,053 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:25,054 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:25,055 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - creating position
+2025-02-11 13:46:26,002 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:26,002 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 13:46:32,336 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - selling stock
+2025-02-11 13:46:32,336 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding position by id
+2025-02-11 13:46:32,337 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - deleting position by id
+2025-02-11 13:46:34,408 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 13:46:34,408 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 14:40:15,751 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-11 14:40:15,751 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions
+2025-02-11 14:40:20,766 [main] INFO  ca.jrvs.apps.stockquote.service.QuoteService - fetching quote data from API
+2025-02-11 14:40:21,632 [main] INFO  ca.jrvs.apps.stockquote.helper.QuoteHttpHelper - {
+    "Global Quote": {
+        "01. symbol": "BBAI",
+        "02. open": "9.43",
+        "03. high": "9.7",
+        "04. low": "8.2",
+        "05. price": "8.72",
+        "06. volume": "187527724",
+        "07. latest trading day": "2025-02-09",
+        "08. previous close": "8.59",
+        "09. change": "0.13",
+        "10. change percent": "1.5134%"
+        "11. Timestamp": "2025-02-11 14:40:21.632"
+    }
+}
+2025-02-11 14:40:21,632 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - finding quote by id
+2025-02-11 14:40:21,635 [main] INFO  ca.jrvs.apps.stockquote.dao.QuoteDao - creating quote
+2025-02-12 13:02:11,193 [main] INFO  ca.jrvs.apps.stockquote.service.PositionService - viewing positions
+2025-02-12 13:02:11,194 [main] INFO  ca.jrvs.apps.stockquote.dao.PositionDao - finding all positions

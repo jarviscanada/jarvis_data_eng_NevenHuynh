@@ -27,7 +27,7 @@ To use the application, Java 11+, Maven, and Docker (PostgreSQL database) are re
 1. Pull Docker Image
 `docker pull postgres`
 
-2. Build data directory
+2. Build the data directory
 `mkdir -p ~/srv/postgres`
 
 3. Run docker image
@@ -71,7 +71,7 @@ the user commands with the rest of the application.
 The Helper layer consists of files that aid in processing data. The Service layer utilizes the Helper
 layer and this is where the Alpha Vantage API calls are made for real-time stock data. 
 
-The Repository Design pattern separates the data access layer from the business logic, similarly to 
+The Repository Design pattern separates the data access layer from the business logic, similar to 
 the DAO design pattern. However, the Repository pattern focuses on providing a high-level 
 abstraction for accessing data. A repository will use DAOs to fetch data instead of directly 
 interacting with the database.

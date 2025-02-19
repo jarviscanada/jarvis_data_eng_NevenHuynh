@@ -4,7 +4,7 @@ by retrieving real-time stock data, viewing their positions, and executing buy a
 It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio 
 data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC, with
 logging handled via Log4j for tracking application flow and errors. Designed with modularity in mind,
-it consists of a layered architecture and supports integration testing.
+it consists of a layered architecture separating business logic from data access.
 
 # Technologies
 - Java

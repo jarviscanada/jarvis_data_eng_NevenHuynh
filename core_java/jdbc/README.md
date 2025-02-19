@@ -56,7 +56,7 @@ To use the application, Java 11+, Maven, and Docker (PostgreSQL database) are re
 
 # Implementation
 ## ER Diagram
-![Entity Relationship Diagram] (./assets/er_diagram.png)
+![Entity Relationship Diagram](./assets/er_diagram.png)
 ## Design Patterns
 The project utilizes the DAO design pattern to separate the data access layer from the business 
 logic of the application. The DAO layer handles database interactions with CRUD (create, read, 

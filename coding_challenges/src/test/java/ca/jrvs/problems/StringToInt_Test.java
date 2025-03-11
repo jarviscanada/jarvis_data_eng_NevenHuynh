@@ -18,11 +18,13 @@ public class StringToInt_Test {
   public void atoiBuiltIn(){
     assertEquals(5432, stringToInt.atoiBuiltIn("5432"));
     assertEquals(-5432, stringToInt.atoiBuiltIn("-5432"));
+    assertEquals(-2147483648, stringToInt.atoiCustom("-91283472332"));
   }
 
   @Test
   public void atoiCustom(){
     assertEquals(5432, stringToInt.atoiCustom("5432"));
     assertEquals(-5432, stringToInt.atoiCustom("-5432"));
+    //assertEquals(-2147483648, stringToInt.atoiCustom("-91283472332"));
   }
 }

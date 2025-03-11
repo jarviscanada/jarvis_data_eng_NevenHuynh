@@ -7,7 +7,7 @@ package ca.jrvs.problems;
  */
 public class ReverseLinkedList {
 
-  public static class ListNode{
+  public class ListNode{
     int val;
     ListNode next;
     ListNode(){};
@@ -37,5 +37,16 @@ public class ReverseLinkedList {
     }
     return prev;
   }
+  public ListNode recursion(ListNode head){
 
+    if(head == null || head.next == null){
+      return head;
+    }
+    ListNode reverseHead = recursion(head.next);
+
+    head.next.next = head;
+    head.next = null;
+
+    return reverseHead;
+  }
 }

@@ -17,11 +17,10 @@ public class ReverseLinkedList_Test {
 
   @Test
   public void reverseList(){
-    ListNode tail = new ListNode(5);
-    ListNode fourth = new ListNode(4, tail);
-    ListNode third = new ListNode(3, fourth);
-    ListNode second = new ListNode(2, third);
-    ListNode head = new ListNode(1, second);
+    ListNode head = reverseLinkedList.new ListNode(1);
+    head.next = reverseLinkedList.new ListNode(2);
+    head.next.next = reverseLinkedList.new ListNode(3);
+    head.next.next.next = reverseLinkedList.new ListNode(4);
 
     ListNode result = reverseLinkedList.reverseList(head);
 
@@ -35,5 +34,26 @@ public class ReverseLinkedList_Test {
 
     assertArrayEquals(actual, expected);
   }
+  @Test
+  public void recursion(){
+    ListNode head = reverseLinkedList.new ListNode(1);
+    head.next = reverseLinkedList.new ListNode(2);
+    head.next.next = reverseLinkedList.new ListNode(3);
+    head.next.next.next = reverseLinkedList.new ListNode(4);
 
+    ListNode result = reverseLinkedList.recursion(head);
+
+    ListNode current = result;
+    int[] expected = {4,3,2,1};
+    int[] actual = new int[4];
+    int i = 0;
+    while(current != null){
+      actual[i] = current.val;
+      System.out.println(actual[i]);
+      current = current.next;
+      i++;
+    }
+
+    assertArrayEquals(expected, actual);
+  }
 }

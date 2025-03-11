@@ -25,22 +25,43 @@ public class StringToInt {
   /**
    * Custom Atoi function to parse a string into an int. This approach reads the string char by char
    * and converts it into an int. Time complexity is O(n) and Space complexity is O(1).
-   * @param string
+   * @param s
    * @return
    */
-  public int atoiCustom(String string){
-    int result = 0;
+  public int atoiCustom(String s){
     int sign = 1;
     int i = 0;
-    if(string.charAt(0)=='-') {
-      sign = -1;
-      i++;
+    long number = 0;
+    if(s.length() == 0)
+      return 0;
+    if(s.charAt(0) == ' '){
+      while(i < s.length()){
+        if(s.charAt(i) == ' ')
+          i++;
+        else
+          break;
+      }
     }
-    while(i < string.length()){
-      result *= 10;
-      result += string.charAt(i) - 48;
-      i++;
+    if( i < s.length()){
+      if(s.charAt(i) == '-'){
+        sign *= -1;
+        i++;
+      }else if(s.charAt(i) == '+'){
+        i++;
+      }
     }
-    return result * sign;
+    while(i < s.length()){
+      if(s.charAt(i) < '0' || s.charAt(i) > '9')
+        break;
+      number *= 10;
+      number += s.charAt(i) - '0';
+      i++;
+      if(number * sign > Integer.MAX_VALUE)
+        return Integer.MAX_VALUE;
+      else if(number * sign < Integer.MIN_VALUE)
+        return Integer.MIN_VALUE;
+    }
+
+    return (int)number * sign;
   }
 }

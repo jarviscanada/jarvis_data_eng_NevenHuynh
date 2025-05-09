@@ -32,7 +32,7 @@ This notebook performs a range of exploratory data analyses to uncover key busin
 The total dollar amount per invoice was calculated to assess purchase sizes, computing descriptive statistics (mean, median, mode) for invoice totals. The distribution of invoice totals was then visualized to identify patterns and skewness.
 
 #### Order Tracking
-Monthly trends were analysed by tracking the amount of placed and cancelled orders, visualizing the data to highlight sesasonal patterns. 
+Monthly trends were analysed by tracking the amount of placed and cancelled orders, visualizing the data to highlight seasonal patterns. 
 
 #### Sales Performance
 Monthly sales were aggregated to monitor revenue trends over time. Monthly growth rates were calculated by comparing one month to the previous, measuring business momentum and fluctuations.
@@ -46,7 +46,7 @@ Conducted RFM (Recency, Frequency, Monetary) analysis to segment customers based
 ## Architecture
 
 ### Description
-The analytics solution is built on top of the **Azure Databricks platform**, which provides a unified environment for big data processing, storage, and analytics. It simplifies the management of Spark clsuters and integrates tightly with Azure services. 
+The analytics solution is built on top of the **Azure Databricks platform**, which provides a unified environment for big data processing, storage, and analytics. It simplifies the management of Spark clusters and integrates tightly with Azure services. 
 
 **Apache Spark** is the main data processing engine behind Databricks. It enables scalable, parallel processing of large datasets across a cluster of machines. It supports multiple APIs, and this project uses PySpark (Spark's Python API) for data transformation, analysis, and visualization. 
 

@@ -38,13 +38,13 @@
     },
     {
       "description": "Created a command-line application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.",
-      "git_url": "core_java/jdbc",
+      "git_url": "/core_java/jdbc",
       "name": "Stock Quote App"
     },
     {
-      "description": "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'. ",
-      "git_url": "pyspark/notebooks/Retail Data Analytics with Pyspark.ipynb",
-      "name": "Retail Data Analytics with Databricks"
+      "description": "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'. ",
+      "git_url": "/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb",
+      "name": "Retail Data Analytics with PySpark"
     }
   ],
   "name": "Neven Huynh",

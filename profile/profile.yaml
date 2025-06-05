@@ -17,6 +17,9 @@ skills:
     - RDBMS/SQL
     - Agile/Scrum
     - Git
+    - PySpark
+    - Databricks
+    - OOP (Object-Oriented Programming)
   # At least 5 skills
   competent:
     - Docker
@@ -33,6 +36,7 @@ skills:
     - AWS
     - R
     - Jakarta Servlet
+    - RESTful APIs
 
 # List of Jarvis projects
 jarvis_projects:
@@ -47,7 +51,9 @@ jarvis_projects:
   - name: "Stock Quote App"
     git_url: "core_java/jdbc"
     description: "Created a command-line application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub."
-
+  - name: "Retail Data Analytics with Databricks"
+    git_url: "pyspark/notebooks/Retail Data Analytics with Pyspark.ipynb"
+    description: "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'. "
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
@@ -90,6 +96,7 @@ others:
   - title: "Activities/Hobbies"
     #list of items
     bullets:
+      - "Certification - Databricks Certified Associate Developer for Apache Spark."
       - "Passionate about gardening. I love growing my own food and trying new varieties of crops that can't be found in grocery stores."
       - "Appreciate spending time outdoors going fishing. Biggest catch was a ~5lb channel catfish."
       - "I enjoy playing a variety of video games. Once placed top 33 Grandmasters in Smite: Battleground of the Gods."

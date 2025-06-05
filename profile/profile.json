@@ -40,12 +40,18 @@
       "description": "Created a command-line application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.",
       "git_url": "core_java/jdbc",
       "name": "Stock Quote App"
+    },
+    {
+      "description": "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'. ",
+      "git_url": "pyspark/notebooks/Retail Data Analytics with Pyspark.ipynb",
+      "name": "Retail Data Analytics with Databricks"
     }
   ],
   "name": "Neven Huynh",
   "others": [
     {
       "bullets": [
+        "Certification - Databricks Certified Associate Developer for Apache Spark.",
         "Passionate about gardening. I love growing my own food and trying new varieties of crops that can't be found in grocery stores.",
         "Appreciate spending time outdoors going fishing. Biggest catch was a ~5lb channel catfish.",
         "I enjoy playing a variety of video games. Once placed top 33 Grandmasters in Smite: Battleground of the Gods.",
@@ -77,14 +83,18 @@
       "MySQL",
       "AWS",
       "R",
-      "Jakarta Servlet"
+      "Jakarta Servlet",
+      "RESTful APIs"
     ],
     "proficient": [
       "Java",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
-      "Git"
+      "Git",
+      "PySpark",
+      "Databricks",
+      "OOP (Object-Oriented Programming)"
     ]
   },
   "summary": "Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. Some of my key projects include a stock quote app, a shoe store website, and an image classification model. Excited by the ever-evolving nature of the software industry, I thrive on continuous learning and am eager to contribute to innovative, high-impact projects."

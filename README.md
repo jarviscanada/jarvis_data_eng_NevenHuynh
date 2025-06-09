@@ -1,14 +1,14 @@
 # Neven Huynh . Jarvis Consulting
 
-Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. Some of my key projects include a stock quote app, a shoe store website, and an image classification model. Excited by the ever-evolving nature of the software industry, I thrive on continuous learning and am eager to contribute to innovative, high-impact projects.
+Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I developed a variety of hands-on projects including a real-time stock quote application, an e-commerce shoe store website, and an image classification model. Excited by the ever-evolving nature of the software industry, I thrive on continuous learning and am eager to contribute to innovative, high-impact projects.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, PySpark, OOP (Object-Oriented Programming)
 
-**Competent:** Docker, PostgreSQL, Python, Unit Testing, Maven
+**Competent:** Docker, PostgreSQL, Python, Unit Testing, Maven, Databricks
 
-**Familiar:** HTML, CSS, JavaScript, MySQL, AWS, R, Jakarta Servlet
+**Familiar:** HTML, CSS, JavaScript, MySQL, AWS, R, Jakarta Servlet, RESTful APIs
 
 ## Jarvis Projects
 
@@ -19,7 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh
 
 **Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/core_java/grep)]: Developed a Java based tool that mimics the usage of the grep command in Linux. The app recursively searches a specified file directory for any files and searches each file for a line of text matching a specified regular expression. All matching lines are then outputted to an output file specified by the user. The application was dockerized as a Docker image, available on DockerHub.
 
-**Stock Quote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/mastercore_java/jdbc)]: Created a command-line application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.
+**Stock Quote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/core_java/jdbc)]: Created a command-line Java application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.
+
+**Retail Data Analytics with PySpark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb)]: Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Identified trends (e.g. seasonal trends) in customer purchases, allowing the prediction of future demand. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'.
 
 
 ## Highlighted Projects
@@ -42,6 +44,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh
 
 
 ## Miscellaneous
+- Certification - Databricks Certified Associate Developer for Apache Spark.
 - Passionate about gardening. I love growing my own food and trying new varieties of crops that can't be found in grocery stores.
 - Appreciate spending time outdoors going fishing. Biggest catch was a ~5lb channel catfish.
 - I enjoy playing a variety of video games. Once placed top 33 Grandmasters in Smite: Battleground of the Gods.

@@ -1,0 +1,104 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "York University Entrance Scholarship",
+        "Lassonde Entrance Scholarship",
+        "Achieved First Class Standing",
+        "GPA: 7.7/9.0"
+      ],
+      "degree": "Bachelor of Science with Honours",
+      "department": "Electrical Engineering and Computer Science",
+      "duration": "2019-2024",
+      "school_name": "York University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh",
+  "highlighted_projects": [
+    {
+      "description": "Co-developed a full stack E-Commerce web application for users to browse a shoe store, packaged in Docker. Utilized Jakarta Server Pages (JSP), JavaScript and CSS for front-end development. Created a SQLite database to organize user information, product stock and purchase history. Login/register page was built utilizing SQLite to verify user credentials and developed an admin panel for updating and deleting products and users.",
+      "git_url": "https://github.com/stevenhaddadcs/4413-Ecommerce-Shoestore",
+      "name": "Shoe E-Commerce Store"
+    },
+    {
+      "description": "Created a model which classified images as \"outdoors\" or \"indoors\" using a dataset of 800 images. Data was preprocessed by partitioning the images and calculating the mean colour intensities of each partition and utilized the 'e1071' package in R to train the model. Image classification achieved an accuracy of 80%.",
+      "name": "Support Vector Machine Image Classification"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed an automated system to monitor server performance metrics across a network of Linux servers. It collects hardware specifications as well as resource usage data (e.g. CPU, memory, disk) in real-time utilising bash scripts and crontab to automate the execution of the scripts. The data is then saved in a PostgreSQL database hosted in a Docker container.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": "Developed a Java based tool that mimics the usage of the grep command in Linux. The app recursively searches a specified file directory for any files and searches each file for a line of text matching a specified regular expression. All matching lines are then outputted to an output file specified by the user. The application was dockerized as a Docker image, available on DockerHub.",
+      "git_url": "/core_java/grep",
+      "name": "Grep App"
+    },
+    {
+      "description": "Created a command-line Java application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.",
+      "git_url": "/core_java/jdbc",
+      "name": "Stock Quote App"
+    },
+    {
+      "description": "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'.",
+      "git_url": "/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb",
+      "name": "Retail Data Analytics with PySpark"
+    },
+    {
+      "description": "Built an end-to-end ELT pipeline using the Medallion Architecture (bronze, silver, gold layers) in Databricks to analyze customer churn for a multinational European bank. Ingested raw CSV data into Delta tables, performed data cleansing and enrichment, and generated aggregated churn insights.",
+      "git_url": "/customer_churn_pipeline/",
+      "name": "Customer Churn Analytics - ELT Pipeline"
+    }
+  ],
+  "name": "Neven Huynh",
+  "others": [
+    {
+      "bullets": [
+        "Certification - Databricks Certified Associate Developer for Apache Spark.",
+        "Passionate about gardening. I love growing my own food and trying new varieties of crops that can't be found in grocery stores.",
+        "Appreciate spending time outdoors going fishing. Biggest catch was a ~5lb channel catfish.",
+        "I enjoy playing a variety of video games. Once placed top 33 Grandmasters in Smite: Battleground of the Gods.",
+        "I am a Toronto Raptors fan and my current favourite player is Scottie Barnes."
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Implemented various projects using Java, SQL, Git, and Databricks. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain valuable insights from feedback. Continuously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise.",
+      "duration": "Nov 2024 - present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Python",
+      "Databricks",
+      "PostgreSQL",
+      "Docker",
+      "Unit Testing",
+      "Apache Spark"
+    ],
+    "familiar": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Maven",
+      "MySQL",
+      "AWS",
+      "R"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "PySpark"
+    ]
+  },
+  "summary": "Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I've worked on projects involving data pipelines, analytics, alongside applications like a stock quote app and an image classification model. I'm excited by the evolving data landscape and eager to contribute to reliable, scalable, and data-driven systems."
+}

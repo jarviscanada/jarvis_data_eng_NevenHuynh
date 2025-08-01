@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I developed a variety of hands-on projects including a real-time stock quote application, an e-commerce shoe store website, and an image classification model. Excited by the ever-evolving nature of the software industry, I thrive on continuous learning and am eager to contribute to innovative, high-impact projects.
+summary: Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I've worked on projects involving data pipelines, analytics, alongside applications like a stock quote app and an image classification model. I'm excited by the evolving data landscape and eager to contribute to reliable, scalable, and data-driven systems.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -18,25 +18,23 @@ skills:
     - Agile/Scrum
     - Git
     - PySpark
-    - OOP (Object-Oriented Programming)
   # At least 5 skills
   competent:
-    - Docker
-    - PostgreSQL
     - Python
-    - Unit Testing
-    - Maven
     - Databricks
+    - PostgreSQL
+    - Docker
+    - Unit Testing
+    - Apache Spark
   # At least 5 skills
   familiar:
     - HTML
     - CSS
     - JavaScript
+    - Maven
     - MySQL
     - AWS
     - R
-    - Jakarta Servlet
-    - RESTful APIs
 
 # List of Jarvis projects
 jarvis_projects:
@@ -53,7 +51,10 @@ jarvis_projects:
     description: "Created a command-line Java application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub."
   - name: "Retail Data Analytics with PySpark"
     git_url: "/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb"
-    description: "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Identified trends (e.g. seasonal trends) in customer purchases, allowing the prediction of future demand. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'."
+    description: "Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'."
+  - name: "Customer Churn Analytics - ELT Pipeline"
+    git_url: "/customer_churn_pipeline/"
+    description: "Built an end-to-end ELT pipeline using the Medallion Architecture (bronze, silver, gold layers) in Databricks to analyze customer churn for a multinational European bank. Ingested raw CSV data into Delta tables, performed data cleansing and enrichment, and generated aggregated churn insights."
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
@@ -75,7 +76,7 @@ professional_experience:
     company: "Jarvis"
     duration: "Nov 2024 - present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Implemented various software projects using Linux, SQL, Docker, Git, Java, Maven, and JDBC. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain valuable insights from feedback. Continuously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise."
+    description: "Implemented various projects using Java, SQL, Git, and Databricks. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain valuable insights from feedback. Continuously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise."
 
 #List of education
 education: 

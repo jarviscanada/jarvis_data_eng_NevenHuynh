@@ -1,14 +1,14 @@
 # Neven Huynh . Jarvis Consulting
 
-Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I developed a variety of hands-on projects including a real-time stock quote application, an e-commerce shoe store website, and an image classification model. Excited by the ever-evolving nature of the software industry, I thrive on continuous learning and am eager to contribute to innovative, high-impact projects.
+Driven, detail-oriented, and passionate about creating impactful solutions, I am a recent graduate from York University with a Bachelor's degree in Computer Science. My academic background has equipped me with strong technical skills and a solid foundation in software development using technologies like Java, Docker, and PostgreSQL. I've worked on projects involving data pipelines, analytics, alongside applications like a stock quote app and an image classification model. I'm excited by the evolving data landscape and eager to contribute to reliable, scalable, and data-driven systems.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, PySpark, OOP (Object-Oriented Programming)
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, PySpark
 
-**Competent:** Docker, PostgreSQL, Python, Unit Testing, Maven, Databricks
+**Competent:** Python, Databricks, PostgreSQL, Docker, Unit Testing, Apache Spark
 
-**Familiar:** HTML, CSS, JavaScript, MySQL, AWS, R, Jakarta Servlet, RESTful APIs
+**Familiar:** HTML, CSS, JavaScript, Maven, MySQL, AWS, R
 
 ## Jarvis Projects
 
@@ -21,7 +21,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh
 
 **Stock Quote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/core_java/jdbc)]: Created a command-line Java application that allows users to manage a simulated stock portfolio with real-time stock data. It utilizes the Alpha Vantage API to fetch live stock information and maintains portfolio data using a PostgreSQL database. The app ensures data persistence and retrieval through JDBC. The application was dockerized as a Docker image, available on DockerHub.
 
-**Retail Data Analytics with PySpark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb)]: Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Identified trends (e.g. seasonal trends) in customer purchases, allowing the prediction of future demand. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'.
+**Retail Data Analytics with PySpark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/pyspark/notebooks/Retail%20Data%20Analytics%20with%20Pyspark.ipynb)]: Implemented a data analytics notebook for London Gift Shop (LGS), a London-based retailer, to provide a detailed analytical view of the shop's sales data, growth, users. Utilised Databricks to process the dataset. Customers were analysed using the RFM (Recency, Frequency, and Monetary Value) metric and segmented into groups such as 'Loyal Customers' or 'Promising'.
+
+**Customer Churn Analytics - ELT Pipeline** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh/tree/master/customer_churn_pipeline/)]: Built an end-to-end ELT pipeline using the Medallion Architecture (bronze, silver, gold layers) in Databricks to analyze customer churn for a multinational European bank. Ingested raw CSV data into Delta tables, performed data cleansing and enrichment, and generated aggregated churn insights.
 
 
 ## Highlighted Projects
@@ -32,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NevenHuynh
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (Nov 2024 - present)**: Implemented various software projects using Linux, SQL, Docker, Git, Java, Maven, and JDBC. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain valuable insights from feedback. Continuously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise.
+**Software Developer, Jarvis (Nov 2024 - present)**: Implemented various projects using Java, SQL, Git, and Databricks. Participated in daily scrum meetings to discuss progress, share updates, and identify blockers to ensure smooth project execution. Participated in regular code reviews to maintain high-quality standards and gain valuable insights from feedback. Continuously explored and integrated new technologies and tools to enhance project outcomes and expand technical expertise.
 
 
 ## Education

@@ -1,0 +1,648 @@
+{
+  "datasets": [
+    {
+      "name": "dfc93246",
+      "displayName": "gold_age_active",
+      "queryLines": [
+        "SELECT * FROM workspace.default.gold_age_active"
+      ]
+    },
+    {
+      "name": "c99dc8aa",
+      "displayName": "gold_age_gender",
+      "queryLines": [
+        "SELECT * FROM workspace.default.gold_age_gender"
+      ]
+    },
+    {
+      "name": "960c31f1",
+      "displayName": "gold_age_products",
+      "queryLines": [
+        "SELECT * FROM workspace.default.gold_age_products"
+      ]
+    },
+    {
+      "name": "cf6dceeb",
+      "displayName": "gold_geo_active",
+      "queryLines": [
+        "SELECT * FROM workspace.default.gold_geo_active"
+      ]
+    },
+    {
+      "name": "349e1e69",
+      "displayName": "gold_age",
+      "queryLines": [
+        "SELECT age_group, exited, not_exited, exited + not_exited AS total_customers, churn_rate FROM workspace.default.gold_age;"
+      ]
+    },
+    {
+      "name": "058357fe",
+      "displayName": "gold_geo",
+      "queryLines": [
+        "SELECT geography, exited, not_exited, exited + not_exited AS total_customers, churn_rate FROM workspace.default.gold_geo;"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "a4eb3c8d",
+      "displayName": "Dashboard",
+      "layout": [
+        {
+          "widget": {
+            "name": "df5829b0",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c99dc8aa",
+                  "fields": [
+                    {
+                      "name": "gender",
+                      "expression": "`gender`"
+                    },
+                    {
+                      "name": "age_gender",
+                      "expression": "`age_gender`"
+                    },
+                    {
+                      "name": "churn_rate",
+                      "expression": "`churn_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "age_gender",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Age and Gender"
+                },
+                "y": {
+                  "fieldName": "churn_rate",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churn Rate"
+                },
+                "color": {
+                  "fieldName": "gender",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "gender"
+                },
+                "label": {
+                  "show": false
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Age and Gender vs Churn Rate"
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 1
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 16,
+            "width": 3,
+            "height": 10
+          }
+        },
+        {
+          "widget": {
+            "name": "a759a749",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "960c31f1",
+                  "fields": [
+                    {
+                      "name": "num_of_products",
+                      "expression": "`num_of_products`"
+                    },
+                    {
+                      "name": "age_products",
+                      "expression": "`age_products`"
+                    },
+                    {
+                      "name": "churn_rate",
+                      "expression": "`churn_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "age_products",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Age and # of Products"
+                },
+                "y": {
+                  "fieldName": "churn_rate",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churn Rate"
+                },
+                "color": {
+                  "fieldName": "num_of_products",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "num_of_products"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Age and # of Products vs Churn Rate"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 16,
+            "width": 3,
+            "height": 10
+          }
+        },
+        {
+          "widget": {
+            "name": "e37dc295",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "dfc93246",
+                  "fields": [
+                    {
+                      "name": "is_active_member",
+                      "expression": "`is_active_member`"
+                    },
+                    {
+                      "name": "age_active",
+                      "expression": "`age_active`"
+                    },
+                    {
+                      "name": "churn_rate",
+                      "expression": "`churn_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "age_active",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Age and Active Account"
+                },
+                "y": {
+                  "fieldName": "churn_rate",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churn Rate"
+                },
+                "color": {
+                  "fieldName": "is_active_member",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Is Active Member"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Age and Account Activity vs Churn Rate"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 26,
+            "width": 3,
+            "height": 9
+          }
+        },
+        {
+          "widget": {
+            "name": "bd494e2f",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cf6dceeb",
+                  "fields": [
+                    {
+                      "name": "is_active_member",
+                      "expression": "`is_active_member`"
+                    },
+                    {
+                      "name": "geo_active",
+                      "expression": "`geo_active`"
+                    },
+                    {
+                      "name": "churn_rate",
+                      "expression": "`churn_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "geo_active",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Geography and Active Account"
+                },
+                "y": {
+                  "fieldName": "churn_rate",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churn Rate"
+                },
+                "color": {
+                  "fieldName": "is_active_member",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "is_active_member"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Geography and Account Activity vs Churn Rate"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 26,
+            "width": 3,
+            "height": 9
+          }
+        },
+        {
+          "widget": {
+            "name": "d7cf8330",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "349e1e69",
+                  "fields": [
+                    {
+                      "name": "exited",
+                      "expression": "`exited`"
+                    },
+                    {
+                      "name": "age_group",
+                      "expression": "`age_group`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "exited",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churned Customers"
+                },
+                "color": {
+                  "fieldName": "age_group",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "natural-order"
+                    }
+                  },
+                  "displayName": "Age Groups"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Proportion of Churned Customers by Age Groups"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "ccb9036e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "349e1e69",
+                  "fields": [
+                    {
+                      "name": "total_customers",
+                      "expression": "`total_customers`"
+                    },
+                    {
+                      "name": "age_group",
+                      "expression": "`age_group`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "total_customers",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Total Customers"
+                },
+                "color": {
+                  "fieldName": "age_group",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "natural-order"
+                    },
+                    "mappings": [
+                      {
+                        "value": "18-24",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 6
+                        }
+                      },
+                      {
+                        "value": "25-34",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 4
+                        }
+                      },
+                      {
+                        "value": "45-54",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 2
+                        }
+                      },
+                      {
+                        "value": "55-64",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      },
+                      {
+                        "value": "65+",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 5
+                        }
+                      }
+                    ]
+                  },
+                  "displayName": "Age Groups"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Total Customers By Age Groups"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "31b7f402",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "058357fe",
+                  "fields": [
+                    {
+                      "name": "total_customers",
+                      "expression": "`total_customers`"
+                    },
+                    {
+                      "name": "geography",
+                      "expression": "`geography`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "total_customers",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Total Customers"
+                },
+                "color": {
+                  "fieldName": "geography",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "natural-order"
+                    }
+                  },
+                  "displayName": "Geography"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Total Customers By Geography"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 8,
+            "width": 3,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "ea2b33ac",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "058357fe",
+                  "fields": [
+                    {
+                      "name": "exited",
+                      "expression": "`exited`"
+                    },
+                    {
+                      "name": "geography",
+                      "expression": "`geography`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "exited",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Churned Customers"
+                },
+                "color": {
+                  "fieldName": "geography",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "natural-order"
+                    },
+                    "mappings": [
+                      {
+                        "value": "France",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 1
+                        }
+                      },
+                      {
+                        "value": "Germany",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 2
+                        }
+                      }
+                    ]
+                  },
+                  "displayName": "Geography"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Proportion of Churned Customers By Geography"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 3,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    }
+  }
+}
